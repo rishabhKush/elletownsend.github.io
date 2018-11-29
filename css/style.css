@@ -2,7 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-#home
+.home-content
 {
   text-align: center;
+}
+
+body{
+  background-color: red;
 }
