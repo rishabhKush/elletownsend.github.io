@@ -16,7 +16,6 @@
 }
 
 /* change backgorund colour of links when hovered over */
-.navbar a:hover {
+.navbar a:hover, .dropdown:hover .dropbutton {
 	background-color: #F3CCCB;
-  text-decoration: none;
 }
