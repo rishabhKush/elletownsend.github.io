@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #C2A2B0;
+  border: 1px solid #C2A2B0;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -150,20 +150,20 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #D6C1CA;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #C2A2B0;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #C495A8;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #BB859B !important;
 }
 
 .about-section {
