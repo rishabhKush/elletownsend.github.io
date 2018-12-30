@@ -300,17 +300,40 @@ footer {
   padding: 5rem 0;
 }
 
-.container {
+/* Skill Bars */
+.container_skill {
   width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: right;
 }
 
-.skill {
-  text-align: right;
-  padding: 10px;
+.skill_title {
+  text-align: left;
+  margin-left: 10px;
   color: white;
 }
 
-.html { width: 90%; background-color: #D6C1CA;}
-.css { width: 90%; background-color: #C2A2B0;}
-.js { width: 30%; background-color: #B893A3;}
-.php { width: 50%; background-color: #AE8496;}
+.html {
+  width: 90%;
+  background-color: #D6C1CA;
+  padding: 5px;
+}
+
+.css {
+  width: 90%;
+  background-color: #C2A2B0;
+  padding: 5px;
+}
+
+.js {
+  width: 30%;
+  background-color: #B893A3;
+  padding: 5px;
+}
+
+.php {
+  width: 50%;
+  background-color: #AE8496;
+  padding: 5px;
+}
