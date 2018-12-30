@@ -299,3 +299,18 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+.container {
+  width: 100%;
+}
+
+.skill {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+.html { width: 90%; background-color: #D6C1CA;}
+.css { width: 90%; background-color: #C2A2B0;}
+.js { width: 30%; background-color: #B893A3;}
+.php { width: 50%; background-color: #AE8496;}
