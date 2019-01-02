@@ -337,3 +337,17 @@ footer {
   background-color: #AE8496;
   padding: 5px;
 }
+
+.image-fluid {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  filter: none;
+  -webkit-filter: none;
+}
+
+.image-fluid:hover {
+  filter: grayscale(1);
+  filter: gray;
+}
