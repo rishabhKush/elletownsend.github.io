@@ -337,6 +337,13 @@ footer {
   background-color: #AE8496;
   padding: 5px;
 }
+
+.C {
+  width: 60%;
+  background-color: #A47589;
+  padding: 5px;
+}
+
  /* images */
 .image-fluid {
   max-width: 100%;
