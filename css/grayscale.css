@@ -315,13 +315,13 @@ footer {
 }
 
 .html {
-  width: 85%;
+  width: 90%;
   background-color: #D6C1CA;
   padding: 5px;
 }
 
 .css {
-  width: 80%;
+  width: 85%;
   background-color: #C2A2B0;
   padding: 5px;
 }
@@ -343,6 +343,7 @@ footer {
   background-color: #A47589;
   padding: 5px;
 }
+
 
  /* images */
 .image-fluid {
