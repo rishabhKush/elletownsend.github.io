@@ -221,11 +221,7 @@
   font-size: 80%;
   letter-spacing: 0.15rem;
   border: 0;
-}
-
-.skill-title {
-    text-transform: uppercase;
-    color: #D6C1CA;
+  text-transform: uppercase;
 }
 
 .contact-section {
@@ -318,8 +314,4 @@ footer {
 .image-fluid:hover {
   filter: grayscale(1);
   filter: gray;
-}
-
-#icon {
-  color: #D6C1CA;
 }
