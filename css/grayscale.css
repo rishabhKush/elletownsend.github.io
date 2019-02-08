@@ -219,11 +219,14 @@
   height: auto;
   font-family: 'Varela Round';
   font-size: 80%;
-  text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
 }
 
+.skill-title {
+    text-transform: uppercase;
+    color: #D6C1CA;
+}
 
 .contact-section {
   padding: 5rem 0 0;
@@ -300,51 +303,6 @@ footer {
   padding: 5rem 0;
 }
 
-/* Skill Bars */
-.container_skill {
-  width: 100%;
-  color: white;
-  padding: 10px;
-  text-align: right;
-}
-
-.skill_title {
-  text-align: left;
-  margin-left: 10px;
-  color: white;
-}
-
-.html {
-  width: 90%;
-  background-color: #D6C1CA;
-  padding: 5px;
-}
-
-.css {
-  width: 85%;
-  background-color: #C2A2B0;
-  padding: 5px;
-}
-
-.js {
-  width: 55%;
-  background-color: #B893A3;
-  padding: 5px;
-}
-
-.php {
-  width: 50%;
-  background-color: #AE8496;
-  padding: 5px;
-}
-
-.C {
-  width: 60%;
-  background-color: #A47589;
-  padding: 5px;
-}
-
-
  /* images */
 .image-fluid {
   max-width: 100%;
@@ -360,4 +318,8 @@ footer {
 .image-fluid:hover {
   filter: grayscale(1);
   filter: gray;
+}
+
+#icon {
+  color: #D6C1CA;
 }
