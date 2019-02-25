@@ -309,6 +309,7 @@ footer {
   display: block;
   filter: none;
   -webkit-filter: none;
+  transition: filter 0.8s ease;
 }
 
 .image-fluid:hover {
