@@ -1,7 +1,7 @@
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
-  font-family: 'Muli';
 }
 
 #mainNav .navbar-toggler {
@@ -43,13 +43,13 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -77,74 +77,174 @@
   #mainNav.navbar-shrink .nav-link.active {
     color: #D6C1CA;
     outline: none;
-    border-bottom: 0.25rem solid #D6C1CA;
+    border-bottom: 0.25rem solid #C2A2B0;
   }
 }
 
-.title {
-  font-size: 50px;
-  letter-spacing: 3px;
-}
-
-.pink {
-  background: #C2A2B0;
-  width: 100vw;
-  min-height: 100vh;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  color: white;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 2%;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.hero {
-  /* Sizing */
+.masthead {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  
-  /* Flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  /* Text styles */
-  text-align: center;
-  color: white;
-  
-  /* Background styles */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/bg-masthead.jpg');
-  background-size: cover;
-  background-position: center center;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  padding-left: 5%;
-  padding-right: 5%;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.hero-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/bg-signup.jpg');
+.masthead h1 {
+  font-family: 'Oswald';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  color: white;
 }
 
-.image {
-  border-radius: 10px;
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Muli';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #D6C1CA;
+}
+
+.btn-primary:hover {
+  background-color: #C2A2B0;
+}
+
+.btn-primary:focus {
+  background-color: #C495A8;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #BB859B !important;
+}
+
+.about-section {
+  font-family: 'Muli';
+  height: 100vh;
+  padding-top: 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.projects-section {
+  font-family: 'Muli';
+  padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #D6C1CA;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #D6C1CA;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.skills-section {
+  padding: 10rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: auto;
+  font-family: 'Muli';
+  font-size: 80%;
+  letter-spacing: 0.15rem;
+  border: 0;
+  text-transform: uppercase;
 }
 
 .contact-section {
-  padding: 2%;
-  margin: 0;
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #C2A2B0;
+}
+
+.contact-section .card h4 {
+  color: #D6C1CA;
+  font-size: 0.8rem;
+  font-family: 'Muli';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #C2A2B0;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
 }
 
 .contact-section .social a {
@@ -168,8 +268,6 @@
 body {
   font-family: 'Muli';
   letter-spacing: 0.0625em;
-  margin: 0;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -179,14 +277,6 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #BB859B;
-}
-
-.link {
-  color: #7D455C;
-}
-
-.link:hover {
- color: #5C3344; 
 }
 
 .bg-black {
@@ -201,7 +291,33 @@ a:focus, a:hover {
   color: #D6C1CA !important;
 }
 
-p {
-  font-size: 20px;
+footer {
+  padding: 5rem 0;
 }
 
+<<<<<<< HEAD
+=======
+ /* images */
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  filter: none;
+  -webkit-filter: none;
+  transition: filter 0.8s ease;
+}
+
+.image-fluid:hover {
+  filter: grayscale(1);
+  filter: gray;
+}
+
+::selection {
+  color: #fff;
+  background: #C2A2B0;
+  text-shadow: none;
+}
+>>>>>>> parent of b4d15fe... Site Overhaul
