@@ -33,12 +33,12 @@ nav a:hover {
 
 /* Centered section inside the top navigation */
 .logo a {
-	font-size: 40px;
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    font-size: 40px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* image gallery */
@@ -51,8 +51,8 @@ nav a:hover {
 }
 
 .img {
-	min-width: 600px;
-	min-height: 300px;
+	max-width: 600px;
+	max-height: 300px;
 	background-color: grey;
 	
 	margin: 25px;
