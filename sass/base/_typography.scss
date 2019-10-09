@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Work+Sans&display=swap');
+
+$primary-font : 'Montserrat';
+$secondary-font: 'Work Sans';
+
+* {
+    color: $text-colour;
+}
+
+a, span {
+    font-family: $primary-font;
+}
+
