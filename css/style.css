@@ -10,18 +10,20 @@ a {
 /* Nav */
 nav {
   position: relative;
-	margin: 0;
+  margin: 0;
   overflow: hidden;
-	
-	padding: 20px;
+    
+  padding: 20px;
 }
 
 /* Style the links inside the navigation bar */
 nav a {
   float: left;
-  color: #222;
   text-align: center;
   padding: 15px 45px;
+
+  color: #222;
+
   text-decoration: none;
   font-size: 17px;
 }
@@ -31,14 +33,55 @@ nav a:hover {
   color: #CCB2BD;
 }
 
-/* Centered section inside the top navigation */
+/* Hide icon by default */
+nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  nav a:not(:first-child) {
+		display: none;
+	}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  nav.responsive {
+		position: relative;
+	}
+  nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+	nav.responsive .logo {
+		display: none;
+	}
+}
+
+/* Centered logo inside the top navigation */
 .logo a {
     font-size: 40px;
+	
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 940px) {
+	.logo a {
+		font-size: 30px;
+	}
 }
 
 /* image gallery */
