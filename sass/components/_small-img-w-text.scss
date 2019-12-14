@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+
+	&__image {
+		margin: 2% 7%;
+
+		object-fit: contain;
+        align-self: flex-start;
+        
+        img {
+            max-width: 600px;
+        }
+    }
+    
+	&__text {
+		padding: 0 10% 0 2%;
+		text-align: center;
+		align-self: center;
+	}
+}
+
+@media screen and (max-width: 1010px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		text-align: center !important;
+		margin: 0;
+		&__image {
+			align-self: center;
+		}
+		&__text {
+			padding: 2% 15%;
+		}
+	}
+}
