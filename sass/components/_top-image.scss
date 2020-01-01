@@ -2,16 +2,19 @@ body {
     margin: 0;
 }
 
+// FIX FOR MED SIZE SCREEN
+
 .intro {
     text-align: left;
     h1 {
         font-size: 2.25em;
-        padding: 5% 40% 0 15%;
+        padding: 5% 40% 0 12%;
     }
 
     p {
         margin-top: -2%;
         padding-right: 40%;
+        padding-left: 12%;
     }
 }
 
