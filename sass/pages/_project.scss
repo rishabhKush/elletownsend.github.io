@@ -8,12 +8,6 @@
 		img {
 			height: 340px;
 			width: 1240px;
-			
-			// This works for now... but change this to show the smaller image version
-			@media only screen and (max-width: 980px) {
-				height: 300px;
-				width: 600px;
-			}
 		}
 		
 } 
@@ -22,6 +16,9 @@ article {
 	text-align: center;
 	
 	p {
+		@media screen and (max-width: 940px) {
+			padding: 2% 10%;
+		}
 		padding: 2% 15%;
 	}
 }

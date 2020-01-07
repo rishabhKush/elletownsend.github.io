@@ -67,8 +67,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 940px) {
+  .img {
+    max-width: 300px;
+    max-height: 150px;
+  }
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .intro {
@@ -86,6 +94,20 @@ body {
   padding-left: 12%;
 }
 
+@media screen and (max-width: 880px) {
+  .top-image .bg {
+    visibility: hidden;
+  }
+  .top-image .fg {
+    z-index: 0 !important;
+    top: 12% !important;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+  }
+}
+
 .top-image .bg {
   display: block;
   margin: 0 auto;
@@ -100,6 +122,16 @@ body {
   position: absolute;
   top: 25%;
   right: 10%;
+}
+
+@media screen and (max-width: 880px) {
+  .bg {
+    visibility: hidden;
+  }
+  .fg {
+    z-index: none;
+    position: relative;
+  }
 }
 
 .container-small {
@@ -142,7 +174,7 @@ body {
   max-width: 600px;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1220px) {
   .container-small {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,6 +196,7 @@ body {
   }
   .container-small img {
     padding: 0;
+    max-width: 300px;
   }
 }
 
@@ -195,7 +228,7 @@ body {
   color: #F6EABC;
 }
 
-.icons .fa-dev {
+.icons .fa-medium {
   color: #CCB2BD;
 }
 
@@ -223,7 +256,7 @@ body {
 }
 
 .container-tall img {
-  max-width: 300px;
+  max-width: 240px;
 }
 
 @media screen and (max-width: 1010px) {
@@ -244,7 +277,7 @@ body {
         align-self: center;
   }
   .container-tall__text {
-    padding: 2% 15%;
+    padding: 2% 5%;
   }
 }
 
@@ -301,7 +334,7 @@ nav .icon {
 }
 
 .logo a {
-  font-size: 40px;
+  font-size: 1.875em;
   float: none;
   position: absolute;
   top: 50%;
@@ -312,7 +345,7 @@ nav .icon {
 
 @media screen and (max-width: 940px) {
   .logo a {
-    font-size: 30px;
+    font-size: 1.25em;
   }
 }
 
@@ -333,18 +366,17 @@ nav .icon {
   width: 1240px;
 }
 
-@media only screen and (max-width: 980px) {
-  .hero-img img {
-    height: 300px;
-    width: 600px;
-  }
-}
-
 article {
   text-align: center;
 }
 
 article p {
   padding: 2% 15%;
+}
+
+@media screen and (max-width: 940px) {
+  article p {
+    padding: 2% 10%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

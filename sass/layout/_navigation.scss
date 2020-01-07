@@ -56,7 +56,7 @@ nav {
 }
 
 .logo a {
-    font-size: 40px;
+    font-size: 1.875em;
 	
     float: none;
     position: absolute;
@@ -67,6 +67,6 @@ nav {
 
 @media screen and (max-width: 940px) {
 	.logo a {
-		font-size: 30px;
+		font-size: 1.25em;
 	}
 }

@@ -29,7 +29,7 @@
 		max-width: 600px;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1220px) {
 	.container-small {
 		display: flex;
 		flex-direction: column;
@@ -45,5 +45,6 @@
 
 	.container-small img {
 		padding: 0;
-}
+		max-width: 300px;
+	}
 }
