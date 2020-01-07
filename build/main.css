@@ -348,7 +348,7 @@ nav .icon {
   width: 1240px;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1200px) {
   .hero-img img {
     max-width: 100vw;
     height: auto;
