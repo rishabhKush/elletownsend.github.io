@@ -279,24 +279,31 @@ nav .icon {
   display: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
   nav a:not(:first-child) {
     display: none;
   }
   nav a.icon {
     float: right;
+    margin: 0px -13px;
     display: block;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 320px) {
+  nav a.icon {
+    margin: 0px -30px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
   nav.responsive {
     position: relative;
   }
   nav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 20px;
   }
   nav.responsive a {
     float: none;
@@ -345,7 +352,6 @@ nav .icon {
   .hero-img img {
     max-width: 100vw;
     height: auto;
-    overflow: hidden;
   }
 }
 
