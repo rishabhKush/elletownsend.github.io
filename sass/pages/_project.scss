@@ -8,6 +8,12 @@
 		img {
 			height: 340px;
 			width: 1240px;
+
+			@media screen and (max-width: 940px) {
+				max-width: 100vw;
+				height: auto;
+				overflow: hidden;
+			}
 		}
 		
 } 
