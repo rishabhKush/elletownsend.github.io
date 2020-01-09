@@ -8,13 +8,6 @@ body {
 
     h1 {
         font-size: 2.25em;
-        //padding: 5% 40% 0 12%;
-    }
-
-    p {
-        //margin-top: -2%;
-        //padding-right: 40%;
-        //padding-left: 12%;
     }
 }
 
@@ -27,6 +20,11 @@ body {
 	.fg {
 		max-height: 300px;
 		border-radius: 215px;
-		border: 15px solid white;
+        border: 15px solid white;
+        
+        @media screen and (max-width: 1220px) {
+                max-width: 60%;
+                height: auto;
+        }
 	}
 }

@@ -12,6 +12,12 @@ a, span, h1 {
 }
 
 p {
-	font-family: $secondary-font;
+    font-family: $secondary-font;
+    
+    a {
+        font-family: $secondary-font;
+        color: #985f76;
+        font-weight: bold;
+    }
 }
 

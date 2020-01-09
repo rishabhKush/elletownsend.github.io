@@ -16,6 +16,12 @@ p {
   font-family: "Work Sans";
 }
 
+p a {
+  font-family: "Work Sans";
+  color: #985f76;
+  font-weight: bold;
+}
+
 .image-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +105,13 @@ body {
   border: 15px solid white;
 }
 
+@media screen and (max-width: 1220px) {
+  .top-image .fg {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
 .container-small {
   margin: 0 101px;
   display: -webkit-box;
@@ -131,10 +144,6 @@ body {
       align-self: center;
 }
 
-.container-small__text p {
-  padding: 2% 0;
-}
-
 .container-small img {
   max-width: 600px;
 }
@@ -161,12 +170,12 @@ body {
   }
   .container-small img {
     padding: 0;
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 
 .icons {
-  padding: 5% 20%;
+  padding: 2% 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,6 +266,12 @@ body {
   }
 }
 
+.tweets {
+  text-align: center;
+  display: block;
+  padding-bottom: 5%;
+}
+
 nav {
   position: relative;
   overflow: hidden;
@@ -273,7 +288,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #CCB2BD;
+  color: #F6EABC;
 }
 
 nav .icon {
@@ -324,11 +339,12 @@ nav .icon {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-shadow: -3px -2px 0 #CCB2BD;
 }
 
 @media screen and (max-width: 940px) {
   .logo a {
-    font-size: 1.25em;
+    font-size: 1.35em;
   }
 }
 

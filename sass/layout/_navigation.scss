@@ -14,7 +14,7 @@ nav {
         font-size: 17px;
 
         &:hover {
-            color: #CCB2BD;
+            color: #F6EABC;
         }
     }
 
@@ -70,10 +70,12 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    text-shadow: -3px -2px 0 $highlight-colour;
 }
 
 @media screen and (max-width: 940px) {
 	.logo a {
-		font-size: 1.25em;
+		font-size: 1.35em;
 	}
 }
