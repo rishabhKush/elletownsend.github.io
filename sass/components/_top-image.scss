@@ -2,39 +2,31 @@ body {
     margin: 0;
 }
 
-// FIX FOR MED SIZE SCREEN
-
 .intro {
     text-align: left;
+    padding: 0% 15% 2% 15%;
+
     h1 {
         font-size: 2.25em;
-        padding: 5% 40% 0 12%;
+        //padding: 5% 40% 0 12%;
     }
 
     p {
-        margin-top: -2%;
-        padding-right: 40%;
-        padding-left: 12%;
+        //margin-top: -2%;
+        //padding-right: 40%;
+        //padding-left: 12%;
     }
 }
 
 .top-image {
-	.bg {
-		display: block;
-		margin: 0 auto;
-		max-width: 100vw;
-	}
+    text-align: center;
+    display: block;
+
+    padding: 2% 0 0 0;
 	
 	.fg {
 		max-height: 300px;
 		border-radius: 215px;
 		border: 15px solid white;
-		
-		z-index: 2;
-		position:absolute;
-        top: 25%;
-        right: 10%;
 	}
 }
-
-// FIX THIS ON MOBILE
