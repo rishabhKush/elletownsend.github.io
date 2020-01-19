@@ -1,277 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Elle Townsend | Undergraduate Computer Scientist</title>
+  <title>Elle Townsend | Undergraduate Computer Scientist</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800|Work+Sans&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- CSS-->
+  <link rel="stylesheet" href="build/main.css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.css" rel="stylesheet">
+</head>
 
-  </head>
+<body>
+  <script src="js/main.js"></script>
 
-  <body id="page-top">
+  <!-- Navigation -->
+  <nav id="nav" class="nav">
+    <div class="logo">
+      <a href="index.html">ELLE TOWNSEND</a>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Elle Townsend</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="http://www.elletownsend.co.uk" target="_blank">Home <i class="fas fa-home"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me <i class="far fa-user"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Portfolio <i class="far fa-window-restore"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">My Skills <i class="fas fa-code"></i></a>
-            </li>
-          </ul>
-        </div>
+    <a href="index.html">HOME</a>
+    <a href="/page/about.html">ABOUT</a>
+    <a href="https://medium.com/@elletownsend">BLOG</a>
+    <a href="javascript:void(0);" class="icon" onclick="hideShowNav()">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+  </nav>
+
+  <container class='top-image'>
+    <img class='fg' src="/img/fg.png" alt="A photo of me!">
+  </container>
+
+  <article class='intro'>
+    <h1>HELLO!</h1>
+    <p>I'm Elle, an Undergraduate Computer Scientist with a love of all things tech. From web development to artificial intelligence, I am always learning something new. <br> <br> You can read a little more <a href="/page/about.html">about me</a>, or hear what I have to say on <a href="https://medium.com/@elletownsend">my blog</a>.</p>
+  </article>
+
+  <div class="container-small">
+    <container class="container-small__image">
+      <img src="/img/et.png" alt="Elle Townsend">
+    </container>
+
+    <article class="container-small__text">
+      <h1>MY WORK</h1>
+      <p>This is a mini showcase of some of the things I've been doing - feel free to take a look! These include works from university, side-projects and events.</p>
+    </article>
+  </div>
+
+  <div class="image-gallery">
+
+    <a class="image-overlay" href="/page/codepen.html">
+      <img class="img" src="/img/codepen.png" alt="Codepen logo on blue background">
+      <div class="overlay">
+        <span class="text">CodePen Projects</span>
       </div>
-    </nav>
+    </a>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <div class="row" >
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <img src="img/image1.png" class="author" alt="Image of the website creator, Elle Townsend">
-            </div>
-          </div>
-          <br>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Undergraduate Computer Scientist with a Love of All Things Tech 👩‍💻</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Find out more about me...</a>
-        </div>
+    <a class="image-overlay" href="/page/custodian.html">
+      <img class="img" src="/img/Custodian.png" alt="The Custodian plant, a sapling on a green background">
+      <div class="overlay">
+        <span class="text">Custodian - CatalystHack 2019</span>
       </div>
-    </header>
+    </a>
 
-    <!-- About Section -->
-    <section id="about" class="about-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Who is Elle?</h2>
-            <p class="text-white">I am a determined and skilled software developer with experience in C# programming, web development, systems analysis, ecommerce and database techniques.</p>
-
-            <p class="text-white">I regularly attend hackathons, workshops and design meetups. I won <a href="https://www.linkedin.com/feed/update/urn:li:activity:6521031014914097152">CatalystHack 2019</a>, developing a game to encourage more young women into STEM.
-              <br>
-            As well as being a Code First: Girls Instructor - teaching beginner level web development to women aged 18+, I have also been recognised as one of <a href="https://www.codefirstgirls.org.uk/ones-to-watch-2019.html">Code First: Girls Ones To Watch 2019!</a></p>
-
-            <p class="text-white">As vice-president of <a href="https://twitter.com/css_hull">Hull University Computer Science Society (hullCSS)</a>, I organise social events, workshops and meetups for people interested in tech at university. 
-              <br>
-            Aside from my studies, <a href="https://www.linkedin.com/feed/update/urn:li:activity:6544238799835148288">I have also interned as a web developer.</a></p>
-
-            <p class="text-white">If you want to find out more about what I do day-to-day, you can find me on <a href="https://twitter.com/_eltownsend">Twitter</a>, <a href="https://www.instagram.com/elle.b.t/">Instagram</a>, <a href="https://www.linkedin.com/in/eleanor-townsend-153424168/">LinkedIn</a>, and <a href="https://github.com/ellebt">GitHub</a>.</p>
-            <br>
-          </div>
-        </div>
+    <a class="image-overlay" href="/page/Design.html">
+      <img class="img" src="/img/Design.png" alt="Pink text indicating this is the design portfolio">
+      <div class="overlay">
+        <span class="text">Design Portfolio</span>
       </div>
-    </section>
+    </a>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
-      <div class="container">
+  </div>
 
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="black and white image of cliffs">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>My Portfolio</h4>
-              <p class="text-black-50 mb-0">Here is a summary of the projects I have worked on / still currently working on - with many more to come!</p>
-            </div>
-          </div>
-        </div>
+  <article class="intro">
+    <h1>WHERE YOU CAN FIND ME:</h1>
+  </article>
 
+  <container class="icons">
+    <a href="https://codepen.io/elletownsend"><i class="fab fa-codepen fa-3x"></i></a>
 
-        <!-- Project One (photo left) -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/website-icon.jpg" alt="Elle Townsend Website icon - pink with white E in center.">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">My Website</h4>
-                  <p class="mb-0 text-white-50">I am working on this website as a means of having a place to display my work and information about myself</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <a href="https://github.com/elletownsend"><i class="fab fa-github-alt fa-3x"></i></a>
 
-        <!-- Project Two (photo right)-->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-              <a href="https://github.com/ellebt"><img class="img-fluid" src="img/locator-icon.jpg" alt=""></a>
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">My GitHub Projects</h4>
-                <p class="mb-0 text-white-50">Here is a link to my GitHub, hosting a handful of projects I am currently working on.</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <a href="https://twitter.com/_elletownsend"><i class="fab fa-twitter fa-3x"></i></a>
 
-        <!-- Project Three (photo left) -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <a href="https://codepen.io/ellebt/"><img class="img-fluid" src="img/codepen-icon.jpg" alt="Pink codepen logo on black background."></a>
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">My Codepen Projects</h4>
-                  <p class="mb-0 text-white-50">Here is a link to my codepen, a selection of small projects and websites I have made.</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <a href="https://www.linkedin.com/in/eleanor-townsend-153424168/"><i class="fab fa-linkedin-in fa-3x"></i></a>
 
-      </div>
-    </section>
+    <a href="https://medium.com/@elletownsend"><i class="fab fa-medium fa-3x"></i></a>
+  </container>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-10 mx-auto text-center">
+  <article class="intro">
+    <h1>WHAT I'VE BEEN UP TO:</h1>
+  </article>
+  <container class='tweets'>
+    <a class="twitter-timeline" data-width="399" data-height="399" data-theme="light" href="https://twitter.com/_elletownsend?ref_src=twsrc%5Etfw">Tweets by _elletownsend</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </container>
 
-            <h2 class="text-white mb-5 skill-title">My Skills & Interests</h2>
-
-            <div class="w-100 my-auto text-center text-lg">
-              <h2 class="text-white mb-4"><i class="fas fa-desktop"></i></h2>
-              <p class="text-white skill-title">Programming</p>
-              <p class="text-white"> C#, PHP, Microsoft SQL, JavaScript, HTML, CSS / SCSS and XML.</p>
-              <br>
-
-              <h2 class="text-white mb-4"><i class="fas fa-pencil-alt"></i></h2>
-              <p class="text-white skill-title">Digital Design</p>
-              <p class="text-white">I enjoy following  design trends and experimenting with my own creative ideas in my spare time.</p>
-              <br>
-
-              <h2 class="text-white mb-4"><i class="fas fa-hashtag"></i></h2>
-              <p class="text-white skill-title">Hull Computer Science Society Vice President.</p>
-              <br>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Hull, United Kingdom</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">townsend.e.b1@gmail.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fab fa-linkedin-in text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">LinkedIn</h4>
-                <hr class="my-4">
-                <div class="small text-black-50"><a href="https://www.linkedin.com/in/eleanor-townsend-153424168/">Eleanor Townsend</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="social d-flex justify-content-center">
-          <a href="https://twitter.com/_eltownsend" target="_blank" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/elle.b.t/" target="_blank" class="mx-2">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://github.com/ellebt" target="_blank" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; Eleanor (Elle) Townsend 2018
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-
-  </body>
+</body>
 
 </html>

@@ -1,0 +1,48 @@
+.image-gallery {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img {
+    max-width: 300px;
+    max-height: 150px;
+    margin: 25px;
+    transition: .5s ease;
+
+    &:hover {
+            -webkit-filter: brightness(65%);
+            filter: brightness(65%);
+        }
+    }
+
+    .image-overlay {
+        position: relative;
+
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+
+        .overlay {
+            opacity: 0;
+            transition: .5s ease;
+
+            .text {
+                color: #ffffff;
+
+                font-size: 20px;
+                text-align: center;
+                text-transform: uppercase;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        }
+
+

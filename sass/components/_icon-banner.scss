@@ -1,0 +1,39 @@
+.icons {
+	padding: 2% 20%;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+		.fa-codepen {
+		color: #CCB2BD;
+	}
+
+	.fa-github-alt {
+		color: #222222;
+	}
+	
+	.fa-twitter {
+		color: #BAE3DF;
+	}
+	
+	.fa-linkedin-in {
+		color: #F6EABC;
+	}
+	
+	.fa-medium {
+		color: #CCB2BD;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.icons {
+		justify-content: center;
+		
+		i {
+			padding: 0 10px;
+		}
+	}
+}
+
+
