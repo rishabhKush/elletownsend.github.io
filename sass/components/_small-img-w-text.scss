@@ -21,11 +21,15 @@
 	}
 }
 
-.container-small img {
-		max-width: 600px;
+.left {
+	padding: 0 0 0 6%;
 }
 
-@media screen and (max-width: 1220px) {
+.container-small img {
+		max-width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
 	.container-small {
 		display: flex;
 		flex-direction: column;

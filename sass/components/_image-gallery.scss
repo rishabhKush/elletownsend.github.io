@@ -6,8 +6,8 @@
 }
 
 .img {
-    max-width: 600px;
-    max-height: 300px;
+    max-width: 300px;
+    max-height: 150px;
     margin: 25px;
     transition: .5s ease;
 
@@ -45,10 +45,4 @@
             }
         }
 
-@media screen and (max-width: 940px) {
-    .img {
-        max-width: 300px;
-        max-height: 150px; 
-    }
-}
 
