@@ -1,25 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;700&display=swap');
 
-$primary-font : 'Montserrat';
-$secondary-font: 'Work Sans';
+$title-font : 'DM Serif Display';
+$secondary-font: 'Poppins';
 
 * {
     color: $text-colour;
-}
-
-a, span, h1 {
-    font-family: $primary-font;
-}
-
-p {
-    font-family: $secondary-font;
-    font-size: 1.15em;
-    
-    a {
-        font-family: $secondary-font;
-        color: #985f76;
-        font-weight: bold;
-    }
 }
 
 
