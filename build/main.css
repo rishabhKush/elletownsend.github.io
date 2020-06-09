@@ -4,91 +4,46 @@
           box-sizing: border-box;
 }
 
-* {
-  color: #222222;
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display";
 }
 
-body {
-  background-color: #FFFCF9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.header_link {
+  font-family: "DM Serif Display";
 }
 
-body a {
-  color: #222222;
+p {
+  font-family: "Poppins";
 }
 
-.title img {
-  margin: 2%;
+li {
+  font-family: "Poppins";
 }
 
-@media screen and (max-width: 990px) {
-  .title img {
-    width: 125px;
-    height: auto;
-  }
+span {
+  font-family: "Poppins";
 }
 
-.text {
-  text-align: center;
-  padding: 15% 0;
-}
-
-@media screen and (max-width: 990px) {
-  .text {
-    padding: 19% 0;
-  }
-  .text svg {
-    width: 385px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .text svg {
-    width: 315px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .text svg {
-    width: 300px;
-  }
-}
-
-.icons {
-  padding: 0% 50%;
-  padding-top: 3%;
+.icons_banner {
+  padding: 2% 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.icons i {
-  padding: 0 20px;
-}
-
-@media screen and (max-width: 990px) {
-  .icons {
+@media screen and (max-width: 900px) {
+  .icons_banner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .icons i {
+  .icons_banner i {
     padding: 0 10px;
-  }
-}
-
-@media screen and (min-width: 1090px) {
-  .icons {
-    margin-top: -100px;
-    padding-bottom: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */
