@@ -1,0 +1,19 @@
+.about {
+  margin: 125px 0;
+  background: $cream;
+  color: $text-colour;
+}
+
+.right_para {
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 55%;
+
+  font-size: 20px;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 100px;
+    text-align: center;
+  }
+}
+

@@ -3,16 +3,18 @@
 $serif: 'DM Serif Display';
 $poppins: 'Poppins';
 
-h1, h2, h3, h4 {
-    font-family: $serif;
+h1,
+h2 {
+  font-family: $serif;
 }
 
-.header_link {
-    font-family: $serif;
+h1 {
+  font-size: 40px;
 }
 
-p {
-    font-family: $poppins;
+li {
+  font-family: $poppins;
+  list-style: none;
 }
 
 li {
@@ -20,5 +22,30 @@ li {
 }
 
 span {
+    font-family: $poppins;
+}
+
+h3 {
+  font-family: $poppins;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: $poppins;
+}
+
+.header_link {
+    font-family: $serif;
+    font-weight: normal;
+}
+
+.blog_title {
+    font-family: $poppins;    
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.moreBtn {
     font-family: $poppins;
 }
