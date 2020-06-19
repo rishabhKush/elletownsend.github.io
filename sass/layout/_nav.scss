@@ -3,7 +3,6 @@ nav {
   overflow: hidden;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-top: -10px;
 
   padding-top: 20px;
   padding-right: 20px;
@@ -12,7 +11,7 @@ nav {
     text-decoration: none;
     color: $text-colour;
 
-    padding: 20px 20px;
+    padding: 20px 35px;
     float: right;
 
     &:hover {

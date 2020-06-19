@@ -5,13 +5,17 @@ body {
   margin: 0;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 h1,
 h2 {
   font-family: "DM Serif Display";
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 li {
@@ -40,6 +44,7 @@ p {
 .header_link {
   font-family: "DM Serif Display";
   font-weight: normal;
+  font-size: 1.1em;
 }
 
 .blog_title {
@@ -61,7 +66,6 @@ nav {
   overflow: hidden;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-top: -10px;
   padding-top: 20px;
   padding-right: 20px;
 }
@@ -69,7 +73,7 @@ nav {
 nav .header_link {
   text-decoration: none;
   color: #222222;
-  padding: 20px 20px;
+  padding: 20px 35px;
   float: right;
 }
 
