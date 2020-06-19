@@ -5,10 +5,15 @@
 @import 'base/reset';
 @import 'base/typography';
 
-// Components
-@import 'components/icon-banner';
-
 // Layouts
+@import 'layout/nav';
+
+// Components
+@import 'components/header';
+@import 'components/about';
+@import 'components/blog';
+@import 'components/work';
+@import 'components/icon-banner';
 
 // Pages
 // @import 'pages/under-construction.scss'

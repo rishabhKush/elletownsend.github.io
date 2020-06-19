@@ -1,0 +1,42 @@
+.header {
+  padding: 125px 0;
+  background: $bg-cream;
+  color: $text-colour;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.profileImg {
+	min-width: 270px;
+	min-height: 270px;
+	background-color: $pink;
+	border: 15px solid white;
+	border-radius: 166.5px;
+  float: right;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  right: 100px;
+  
+  @media screen and (max-width: 1300px) {
+    background-color: blue;
+    position: static;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
+
+.left_para {
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 40%;
+
+  font-size: 20px;
+
+  @media screen and (max-width: 1300px) {
+    margin-right: 100px;
+    text-align: center;
+  }
+}
+

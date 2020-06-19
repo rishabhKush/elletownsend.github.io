@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;700&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body {
+  background: #FFFCF9;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2 {
   font-family: "DM Serif Display";
 }
 
-.header_link {
-  font-family: "DM Serif Display";
+h1 {
+  font-size: 40px;
 }
 
-p {
+li {
   font-family: "Poppins";
+  list-style: none;
 }
 
 li {
@@ -24,7 +26,308 @@ span {
   font-family: "Poppins";
 }
 
-.icons_banner {
+h3 {
+  font-family: "Poppins";
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: "Poppins";
+}
+
+.header_link {
+  font-family: "DM Serif Display";
+  font-weight: normal;
+}
+
+.blog_title {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.moreBtn {
+  font-family: "Poppins";
+}
+
+nav {
+  background: #FFFCF9;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: -10px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+nav .header_link {
+  text-decoration: none;
+  color: #222222;
+  padding: 20px 20px;
+  float: right;
+}
+
+nav .header_link:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #E4C0C3;
+          text-decoration-color: #E4C0C3;
+  text-decoration-thickness: 0.25em;
+  text-underline-offset: 2px;
+}
+
+nav .toggle {
+  float: right;
+  padding: 10px 20px;
+}
+
+.nav .hamb {
+  display: none;
+  color: #222222;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav a:not(:first-child) {
+    display: none;
+  }
+  .nav .toggle {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+  .nav a.hamb {
+    float: left;
+    display: block;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav.responsive {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .nav.responsive a.hamb {
+    position: absolute;
+    padding-left: 10px;
+    top: 20px;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .nav.responsive .toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.header {
+  padding: 125px 0;
+  background: #FFFCF9;
+  color: #222222;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.profileImg {
+  min-width: 270px;
+  min-height: 270px;
+  background-color: #E4C0C3;
+  border: 15px solid white;
+  border-radius: 166.5px;
+  float: right;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  right: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  .profileImg {
+    background-color: blue;
+    position: static;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
+
+.left_para {
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 40%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .left_para {
+    margin-right: 100px;
+    text-align: center;
+  }
+}
+
+.about {
+  margin: 125px 0;
+  background: #F9F2E8;
+  color: #222222;
+}
+
+.right_para {
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 55%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .right_para {
+    margin-left: 100px;
+    text-align: center;
+  }
+}
+
+.blog {
+  padding-top: 15px;
+  background: #FFFCF9;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.blog .blog_posts {
+  margin-top: 74px;
+}
+
+.blog .blog_posts .blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: -40px !important;
+}
+
+.blog .blog_posts .post {
+  padding-bottom: 4%;
+}
+
+.blog .blog_posts .post a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.blog .blog_posts .post .topImg {
+  height: 172px;
+  width: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog .blog_posts .post .moreBtn {
+  border: 2px solid #222222;
+  background-color: #FFFCF9;
+  font-size: 0.8em;
+  padding: 9px;
+}
+
+.blog .blog_posts .post .moreBtn:hover {
+  background-color: #E4C0C3;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 1300px) {
+  .blog .blogs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding-left: -40px !important;
+  }
+}
+
+.left_txt {
+  text-align: left;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  .left_txt {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+.work {
+  margin: 100px 0;
+  background: #F9F2E8;
+  color: #222222;
+}
+
+.right_txt {
+  text-align: right;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .right_txt {
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex container {
+  padding: 0 2%;
+}
+
+.flex container li {
+  margin: 2% 0;
+  max-width: 50ch;
+}
+
+.socials {
+  padding-top: 30px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #FFFCF9;
+  color: #222222;
+  position: static;
+  bottom: 0;
+}
+
+.socials h1,
+.socials h3 {
+  text-align: center;
+}
+
+.icons {
   padding: 2% 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,15 +337,24 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #222222;
+}
+
+.icons .fab:nth-child(3n + 1) {
+  color: #E4C0C3;
+}
+
+.icons .fab:nth-child(3n + 2) {
+  color: #E54546;
 }
 
 @media screen and (max-width: 900px) {
-  .icons_banner {
+  .icons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .icons_banner i {
+  .icons i {
     padding: 0 10px;
   }
 }

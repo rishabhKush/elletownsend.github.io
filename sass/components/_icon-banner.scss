@@ -1,19 +1,42 @@
-.icons_banner {
-	padding: 2% 20%;
-	
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+.socials {
+  padding-top: 30px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: $bg-cream;
+  color: $text-colour;
+
+  position: static;
+  bottom: 0;
+
+  h1,
+  h3 {
+    text-align: center;
+  }
+}
+
+.icons {
+  padding: 2% 20%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $text-colour;
+
+  .fab:nth-child(3n + 1) {
+    color: $pink;
+  }
+
+  .fab:nth-child(3n + 2) {
+    color: $red;
+  }
 }
 
 @media screen and (max-width: 900px) {
-	.icons_banner {
-		justify-content: center;
-		
-		i {
-			padding: 0 10px;
-		}
-	}
+  .icons {
+    justify-content: center;
+
+    i {
+      padding: 0 10px;
+    }
+  }
 }
-
-

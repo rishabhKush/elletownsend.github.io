@@ -1,0 +1,30 @@
+.work {
+  margin: 100px 0;
+  background: $cream;
+  color: $text-colour;
+}
+
+.right_txt {
+  text-align: right;
+  margin-right: 100px;
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  container {
+    padding: 0 2%;
+    
+    li {
+      margin: 2% 0;
+      max-width: 50ch;
+    }
+  }
+}
