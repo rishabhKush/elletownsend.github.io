@@ -2,6 +2,7 @@
 body {
   background: #FFFCF9;
   overflow-x: hidden;
+  margin: 0;
 }
 
 h1,
@@ -49,6 +50,10 @@ p {
 
 .moreBtn {
   font-family: "Poppins";
+}
+
+.text_link {
+  color: #DBB6B9;
 }
 
 nav {
@@ -139,11 +144,10 @@ nav .toggle {
 }
 
 .profileImg {
-  min-width: 270px;
-  min-height: 270px;
+  max-height: 300px;
   background-color: #E4C0C3;
   border: 15px solid white;
-  border-radius: 166.5px;
+  border-radius: 100%;
   float: right;
   position: relative;
   z-index: 1;
@@ -153,7 +157,8 @@ nav .toggle {
 
 @media screen and (max-width: 1300px) {
   .profileImg {
-    background-color: blue;
+    min-width: 270px;
+    min-height: 270px;
     position: static;
     float: none;
     display: block;
@@ -176,7 +181,7 @@ nav .toggle {
 }
 
 .about {
-  margin: 125px 0;
+  padding: 125px 0;
   background: #F9F2E8;
   color: #222222;
 }
@@ -275,7 +280,7 @@ nav .toggle {
 }
 
 .work {
-  margin: 100px 0;
+  padding: 100px 0;
   background: #F9F2E8;
   color: #222222;
 }
