@@ -1,12 +1,10 @@
 .socials {
   padding-top: 30px;
+  padding-bottom: 30px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   background: $bg-cream;
   color: $text-colour;
-
-  position: static;
-  bottom: 0;
 
   h1,
   h3 {
@@ -33,10 +31,6 @@
 
 @media screen and (max-width: 900px) {
   .icons {
-    justify-content: center;
-
-    i {
-      padding: 0 10px;
-    }
+    justify-content: space-between;
   }
 }
