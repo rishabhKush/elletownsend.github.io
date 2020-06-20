@@ -22,7 +22,7 @@ li {
 }
 
 span {
-    font-family: $poppins;
+    font-family: $serif;
 }
 
 h3 {
@@ -44,7 +44,7 @@ p {
 .blog_title {
     font-family: $poppins;    
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .moreBtn {
@@ -53,4 +53,35 @@ p {
 
 .text_link {
     color: $link-pink;
+}
+
+.red {
+    color: $red;
+}
+
+.left, .right {
+    font-size: 18px;
+}
+
+.right_para, .left_para {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .left, .right {
+    font-size: 11px;
+    }
+
+    .right_para, .left_para {
+        font-size: 1em;
+    }
+
 }

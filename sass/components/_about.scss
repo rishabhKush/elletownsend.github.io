@@ -1,7 +1,21 @@
 .about {
   padding: 125px 0;
   background: $cream;
+  background-image: url(/svg/design.svg);
+  background-repeat: repeat-y;
+  background-attachment: fixed;
   color: $text-colour;
+
+  @media screen and (max-width: 425px) {
+    padding: 70px 0;
+  }
+
+  h1 {
+      text-decoration: underline;
+      text-decoration-color: $pink;
+      text-decoration-thickness: 0.25em;
+      text-underline-offset: 5px;
+  }
 }
 
 .right_para {
@@ -9,11 +23,13 @@
   margin-right: 100px;
   margin-left: 55%;
 
-  font-size: 20px;
-
   @media screen and (max-width: 1200px) {
     margin-left: 100px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin: 0 25px;
   }
 }
 
