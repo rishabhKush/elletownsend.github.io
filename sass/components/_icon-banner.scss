@@ -20,11 +20,15 @@
   align-items: center;
   color: $text-colour;
 
-  .fab:nth-child(3n + 1) {
+  .social_icons {
+	  color: $text-colour;
+  }
+
+  .social_icons:nth-child(3n + 1) {
     color: $pink;
   }
 
-  .fab:nth-child(3n + 2) {
+  .social_icons:nth-child(3n + 2) {
     color: $red;
   }
 }

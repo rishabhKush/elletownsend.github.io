@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background: #FFFCF9;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
   overflow-x: hidden;
   margin: 0;
-}
-
-* {
-  overflow-x: hidden;
 }
 
 h1,
@@ -83,7 +84,7 @@ p {
     font-size: 1.1em;
   }
   .left, .right {
-    font-size: 11px;
+    font-size: 12px;
   }
   .right_para, .left_para {
     font-size: 1em;
@@ -163,8 +164,16 @@ body.dark-mode .socials {
   color: #F9F2E8;
 }
 
-body.dark-mode .socials .icons {
+body.dark-mode .socials .social_icons {
   color: #F9F2E8;
+}
+
+body.dark-mode .socials .social_icons:nth-child(3n + 1) {
+  color: #E4C0C3;
+}
+
+body.dark-mode .socials .social_icons:nth-child(3n + 2) {
+  color: #E54546;
 }
 
 nav {
@@ -500,11 +509,15 @@ nav .toggle {
   color: #222222;
 }
 
-.icons .fab:nth-child(3n + 1) {
+.icons .social_icons {
+  color: #222222;
+}
+
+.icons .social_icons:nth-child(3n + 1) {
   color: #E4C0C3;
 }
 
-.icons .fab:nth-child(3n + 2) {
+.icons .social_icons:nth-child(3n + 2) {
   color: #E54546;
 }
 

@@ -1,10 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background: $bg-cream;
   transition: ease 0.3s;
   overflow-x: hidden;
   margin: 0;
-}
-
-* {
-    overflow-x: hidden;
 }
