@@ -41,3 +41,10 @@ function hideShowNav() {
         x.className = "nav";
     }
 }
+
+function toggleDarkMode() {
+    var body = document.getElementById("body");
+    var currentClass = body.className;
+    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+    body.style.transition = "";
+}
