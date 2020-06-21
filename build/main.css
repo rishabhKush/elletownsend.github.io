@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;700&display=swap");
 body {
   background: #FFFCF9;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
   overflow-x: hidden;
   margin: 0;
 }
@@ -86,6 +88,83 @@ p {
   .right_para, .left_para {
     font-size: 1em;
   }
+}
+
+body.dark-mode {
+  background-color: #222222;
+}
+
+body.dark-mode .nav {
+  background-color: #222222;
+}
+
+body.dark-mode .nav .hamb {
+  color: #F9F2E8;
+}
+
+body.dark-mode .nav .header_link {
+  color: #F9F2E8;
+}
+
+body.dark-mode .nav .toggle path {
+  fill: #F9F2E8;
+}
+
+body.dark-mode .header {
+  background-color: #222222;
+  color: #F9F2E8;
+}
+
+body.dark-mode .header .profileImg {
+  border: 15px solid #222222;
+}
+
+body.dark-mode .about {
+  background: #E4C0C3;
+  background-image: url(/svg/design-2.svg);
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+body.dark-mode .about h1 {
+  -webkit-text-decoration-color: #F9F2E8;
+          text-decoration-color: #F9F2E8;
+}
+
+body.dark-mode .blog {
+  background-color: #222222;
+  color: #F9F2E8;
+}
+
+body.dark-mode .blog h2 {
+  color: #F9F2E8;
+}
+
+body.dark-mode .blog .moreBtn {
+  border: 2px solid #F9F2E8 !important;
+  background-color: #222222 !important;
+  color: #F9F2E8;
+}
+
+body.dark-mode .work {
+  background-color: #E4C0C3;
+  background-image: url(/svg/monogram-2.svg);
+  background-repeat: no-repeat;
+  background-position: 5% 95%;
+  background-size: 50px;
+}
+
+body.dark-mode .work .text_link {
+  color: #F9F2E8;
+}
+
+body.dark-mode .socials {
+  background-color: #222222;
+  color: #F9F2E8;
+}
+
+body.dark-mode .socials .icons {
+  color: #F9F2E8;
 }
 
 nav {
