@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;700&display=swap");
 body {
   background: #FFFCF9;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   overflow-x: hidden;
   margin: 0;
 }
