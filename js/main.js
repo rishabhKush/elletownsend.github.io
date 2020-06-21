@@ -20,11 +20,11 @@ window.onload = function () {
             posts.slice(0, 3).forEach((item) => {
                 output += `
          <li class="post">
-               <a href="${item.link}"><img src="${item.thumbnail}" class="topImg"></img>
+               <a href="${item.link}" title="${item.title}" rel="noopener"><img src="${item.thumbnail}" class="topImg" alt="Blog post thumbnail image"></img>
                <div class="content">
                   <div class="preview">
                      <h2 class="blog_title">${item.title}</h2></a>
-										 <button class="moreBtn" type="button" onclick="location.href='${item.link}'">Read More</button>
+										 <button class="moreBtn" type="button" onclick="location.href='${item.link}'" title="${item.title}" rel="noopener">Read More</button>
                   </div>                
                </div>
          </li>`

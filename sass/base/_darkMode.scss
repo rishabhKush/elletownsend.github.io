@@ -69,8 +69,15 @@ body.dark-mode {
       background-color: $text-colour;
       color: $cream;
 
-      .icons {
-          color: $cream;
-      }
+    .social_icons {
+	  color: $cream;
+    }
+    .social_icons:nth-child(3n + 1) {
+        color: $pink;
+    }
+
+    .social_icons:nth-child(3n + 2) {
+        color: $red;
+    }
   }
 }
