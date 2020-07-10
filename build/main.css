@@ -97,8 +97,8 @@ p {
 
 body {
   background-color: #FFFCF9;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
 }
 
 body.light-mode {
@@ -106,9 +106,9 @@ body.light-mode {
 }
 
 body.light-mode .nav {
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background: #FFFCF9;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
 }
 
 body.light-mode .nav .hamb {
@@ -120,10 +120,10 @@ body.light-mode .nav .header_link {
 }
 
 body.light-mode .header {
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background: #FFFCF9;
   color: #222222;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
 }
 
 body.light-mode .header .profileImg {
@@ -131,8 +131,8 @@ body.light-mode .header .profileImg {
 }
 
 body.light-mode .about {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #F9F2E8;
   background-image: url(/svg/design.svg);
   background-repeat: repeat-y;
@@ -146,8 +146,8 @@ body.light-mode .about h1 {
 }
 
 body.light-mode .blog {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #FFFCF9;
 }
 
@@ -162,9 +162,9 @@ body.light-mode .blog .moreBtn {
 }
 
 body.light-mode .work {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-  background: #F9F2E8;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
+  background-color: #F9F2E8;
   color: #222222;
   background-image: url(/svg/monogram.svg);
   background-repeat: no-repeat;
@@ -173,8 +173,8 @@ body.light-mode .work {
 }
 
 body.light-mode .socials {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #FFFCF9;
   color: #222222;
 }
@@ -200,9 +200,9 @@ body.dark-mode {
 }
 
 body.dark-mode .nav {
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #222222;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
 }
 
 body.dark-mode .nav .hamb {
@@ -218,15 +218,15 @@ body.dark-mode .nav .toggle path {
 }
 
 body.dark-mode .header {
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #222222;
   color: #F9F2E8;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
 }
 
 body.dark-mode .about {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #E4C0C3;
   background-image: url(/svg/design-2.svg);
   background-repeat: repeat-y;
@@ -239,8 +239,8 @@ body.dark-mode .about h1 {
 }
 
 body.dark-mode .blog {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #222222;
   color: #F9F2E8;
 }
@@ -256,8 +256,8 @@ body.dark-mode .blog .moreBtn {
 }
 
 body.dark-mode .work {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #E4C0C3;
   background-image: url(/svg/monogram-2.svg);
   background-repeat: no-repeat;
@@ -270,8 +270,8 @@ body.dark-mode .work .text_link {
 }
 
 body.dark-mode .socials {
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background-color ease 0.3s, color ease 0.3s;
   background-color: #222222;
   color: #F9F2E8;
 }

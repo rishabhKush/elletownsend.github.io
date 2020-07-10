@@ -1,14 +1,14 @@
 body {
 	background-color: #FFFCF9;
-	transition: ease 0.3s;
+	transition: background-color ease 0.3s, color ease 0.3s;
 }
 
 body.light-mode {
   background-color: $bg-cream;
 
   .nav {
+    transition: background-color ease 0.3s, color ease 0.3s;
     background: $bg-cream;
-    transition: ease 0.3s;
 
     .hamb {
       color: $text-colour;
@@ -20,9 +20,9 @@ body.light-mode {
   }
 
 	.header {
+    transition: background-color ease 0.3s, color ease 0.3s;
     background: $bg-cream;
     color: $text-colour;
-    transition: ease 0.3s;
     
     .profileImg {
       background-color: $pink;
@@ -30,7 +30,7 @@ body.light-mode {
   }
 
   .about {  
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $cream;
     background-image: url(/svg/design.svg);
     background-repeat: repeat-y;
@@ -43,7 +43,7 @@ body.light-mode {
   }
 
   .blog {
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $bg-cream;
 
     a, h2 {
@@ -58,8 +58,8 @@ body.light-mode {
   }
 
   .work {
-    transition: ease 0.3s;
-    background: $cream;
+    transition: background-color ease 0.3s, color ease 0.3s;
+    background-color: $cream;
     color: $text-colour;
 
     background-image: url(/svg/monogram.svg);
@@ -69,7 +69,7 @@ body.light-mode {
   }
 
   .socials {
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $bg-cream;
     color: $text-colour;
 
@@ -95,8 +95,8 @@ body.dark-mode {
   background-color: $text-colour;
 
   .nav {
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $text-colour;
-    transition: ease 0.3s;
 
     .hamb {
       color: $cream;
@@ -112,13 +112,13 @@ body.dark-mode {
   }
 
 	.header {
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $text-colour;
     color: $cream;
-    transition: ease 0.3s;
   }
   
   .about {  
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $pink;
     background-image: url(/svg/design-2.svg);
     background-repeat: repeat-y;
@@ -130,7 +130,7 @@ body.dark-mode {
   }
 
   .blog {
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $text-colour;
     color: $cream;
 
@@ -146,7 +146,7 @@ body.dark-mode {
   }
 
   .work {
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $pink;
 
     .text_link {
@@ -160,7 +160,7 @@ body.dark-mode {
   }
 
   .socials {
-    transition: ease 0.3s;
+    transition: background-color ease 0.3s, color ease 0.3s;
     background-color: $text-colour;
     color: $cream;
 
