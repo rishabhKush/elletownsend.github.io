@@ -8,6 +8,13 @@ h2 {
   font-family: $serif;
 }
 
+h4 {
+    font-family: $poppins;
+    font-weight: normal;
+    font-size: 0.75em;
+    letter-spacing: 3px;
+}
+
 h1 {
   font-size: 2.5em;
 }
@@ -64,7 +71,7 @@ p {
 }
 
 .right_para, .left_para {
-    font-size: 20px;
+    font-size: 1.15em;
 }
 
 @media screen and (max-width: 425px) {

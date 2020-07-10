@@ -1,5 +1,4 @@
 nav {
-  background: $bg-cream;
   overflow: hidden;
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -9,7 +8,6 @@ nav {
 
   .header_link {
     text-decoration: none;
-    color: $text-colour;
 
     padding: 20px 35px;
     float: right;
@@ -30,7 +28,6 @@ nav {
 
 .nav .hamb {
   display: none;
-  color: $text-colour;
 }
 
 @media screen and (max-width: 1000px) {

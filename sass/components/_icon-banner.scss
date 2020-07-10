@@ -3,11 +3,10 @@
   padding-bottom: 30px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background: $bg-cream;
-  color: $text-colour;
 
   h1,
-  h3 {
+  h3,
+  h4 {
     text-align: center;
   }
 }
@@ -18,19 +17,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: $text-colour;
 
-  .social_icons {
-	  color: $text-colour;
-  }
-
-  .social_icons:nth-child(3n + 1) {
-    color: $pink;
-  }
-
-  .social_icons:nth-child(3n + 2) {
-    color: $red;
-  }
 }
 
 @media screen and (max-width: 900px) {
