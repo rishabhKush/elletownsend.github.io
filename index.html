@@ -38,106 +38,106 @@
 
 </head>
 
-<body>
+<body class="light-mode" id="body">
+  <nav class="nav" id="nav">
+    <a class="toggle" href="javascript:void(0);" onclick="toggleDarkMode()" aria-label="Dark Mode Toggle"><svg width="59" height="48" viewBox="0 0 59 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M49.3335 22.6661H38.6668C37.9295 22.6661 37.3335 22.07 37.3335 21.3327C37.3335 20.5954 37.9295 19.9994 38.6668 19.9994H49.3335C50.0709 19.9994 50.6669 20.5954 50.6669 21.3327C50.6669 22.07 50.0709 22.6661 49.3335 22.6661Z" fill="#222222" />
+        <path d="M33.3334 22.6661H30.6668C29.9294 22.6661 29.3334 22.07 29.3334 21.3327C29.3334 20.5954 29.9294 19.9994 30.6668 19.9994H33.3334C34.0708 19.9994 34.6668 20.5954 34.6668 21.3327C34.6668 22.07 34.0708 22.6661 33.3334 22.6661Z" fill="#222222" />
+        <path d="M52.6669 5.33266C52.0589 5.33266 51.4509 5.42999 50.8642 5.62066C49.6455 3.79132 47.5935 2.66599 45.3335 2.66599C42.5002 2.66599 40.0668 4.44732 39.1148 6.97667C38.5468 6.77267 37.9455 6.666 37.3335 6.666C34.3921 6.666 32.0001 9.05801 32.0001 11.9994C32.0001 14.9407 34.3921 17.3327 37.3335 17.3327H52.6669C55.9749 17.3327 58.6669 14.6407 58.6669 11.3327C58.6669 8.02467 55.9749 5.33266 52.6669 5.33266ZM52.6669 14.666H51.2589C51.7175 13.878 52.0002 12.9754 52.0002 11.9994C52.0002 11.262 51.4042 10.666 50.6669 10.666C49.9295 10.666 49.3335 11.262 49.3335 11.9994C49.3335 13.47 48.1375 14.666 46.6668 14.666H37.3335C35.8628 14.666 34.6668 13.47 34.6668 11.9994C34.6668 10.5287 35.8628 9.33268 37.3335 9.33268C37.9895 9.33268 38.6268 9.58468 39.1268 10.042C39.5055 10.3927 40.0562 10.4887 40.5335 10.294C41.0108 10.098 41.3335 9.64468 41.3602 9.12734C41.4695 7.00067 43.2135 5.33266 45.3335 5.33266C46.9708 5.33266 48.4228 6.318 49.0375 7.84334C49.1828 8.20467 49.4802 8.48334 49.8495 8.60867C50.2175 8.73134 50.6269 8.69134 50.9589 8.48734C51.5015 8.16334 52.0762 7.99934 52.6669 7.99934C54.5055 7.99934 56.0002 9.49401 56.0002 11.3327C56.0002 13.1714 54.5055 14.666 52.6669 14.666Z" fill="#222222" />
+        <path d="M53.8802 24.8727C53.3309 24.6234 52.6762 24.7794 52.2962 25.2514C49.1828 29.1101 44.5642 31.3221 39.6255 31.3221C30.6481 31.3221 23.3441 24.0181 23.3441 15.0407C23.3441 10.102 25.5561 5.48333 29.4148 2.36998C29.8868 1.98865 30.0428 1.33798 29.7934 0.785979C29.5428 0.233977 28.9561 -0.0806912 28.3561 0.0179758C17.3334 1.87132 9.33337 11.3287 9.33337 22.5047C9.33337 25.2167 9.83337 27.8074 10.7054 30.2221C7.92003 31.5341 5.88135 34.1794 5.42935 37.3341C5.39735 37.3328 5.36402 37.3328 5.33335 37.3328C2.39201 37.3328 0 39.7248 0 42.6661C0 45.6075 2.39201 47.9995 5.33335 47.9995H24.0001C26.4134 47.9995 28.5761 46.9208 30.0441 45.2248C30.7414 45.2901 31.4468 45.3328 32.1614 45.3328C43.3375 45.3328 52.7949 37.3328 54.6482 26.3101C54.7495 25.7127 54.4335 25.1221 53.8802 24.8727ZM24.0001 45.3328H12C10.5294 45.3328 9.33337 44.1368 9.33337 42.6661C9.33337 41.9288 8.73736 41.3328 8.00003 41.3328C7.26269 41.3328 6.66669 41.9288 6.66669 42.6661C6.66669 43.6421 6.94936 44.5448 7.40803 45.3328H5.33335C3.86268 45.3328 2.66668 44.1368 2.66668 42.6661C2.66668 41.1955 3.86268 39.9995 5.33335 39.9995C5.61469 39.9995 5.90935 40.0555 6.23202 40.1701C6.64802 40.3181 7.10669 40.2528 7.46536 39.9928C7.82269 39.7328 8.0267 39.3128 8.01336 38.8728C8.01203 38.8554 8.00136 38.6848 8.00003 38.6661C8.00003 34.9901 10.9907 31.9994 14.6667 31.9994C16.7974 31.9994 18.8161 33.0368 20.0694 34.7741C20.8681 35.8728 21.3334 37.2061 21.3334 38.6661C21.3334 39.4035 21.9294 39.9995 22.6667 39.9995C23.4041 39.9995 24.0001 39.4035 24.0001 38.6661C24.0001 37.2728 23.6788 35.9568 23.1281 34.7674C23.4188 34.7154 23.7081 34.6661 24.0001 34.6661C26.9414 34.6661 29.3334 37.0581 29.3334 39.9995C29.3334 42.9408 26.9414 45.3328 24.0001 45.3328ZM32.1614 42.6661C31.9534 42.6661 31.7508 42.6408 31.5441 42.6355C31.8348 41.8088 32.0001 40.9235 32.0001 39.9995C32.0001 35.5874 28.4121 31.9994 24.0001 31.9994C23.1774 31.9994 22.3614 32.1314 21.5667 32.3941C19.8081 30.4608 17.2987 29.3327 14.6667 29.3327C14.1867 29.3327 13.7187 29.3781 13.2587 29.4474C12.4587 27.2794 12 24.9474 12 22.5047C12 14.2527 16.9401 7.06067 24.2494 3.96999C21.9441 7.15934 20.6761 11.0073 20.6761 15.042C20.6761 25.4901 29.1761 33.9901 39.6241 33.9901C43.6575 33.9901 47.5068 32.7234 50.6962 30.4168C47.6055 37.7261 40.4148 42.6661 32.1614 42.6661Z" fill="#222222" />
+      </svg></a>
+
+    <a class="header_link" href="#contact" tabindex="4">contact</a>
+    <a class="header_link" href="#work" tabindex="3">work</a>
+    <a class="header_link" href="#blog" tabindex="2">blog</a>
+    <a class="header_link" href="#about" tabindex="1">about</a>
+
+    <a class="hamb" href="javascript:void(0);" onclick="hideShowNav()" aria-label="Menu">
+      <i class="fa fa-bars fa-2x"></i></a>
+  </nav>
+  <div class="header">
+    <img class="profileImg" src="img/elle.png" alt="A photo of Elle Townsend">
+    <h1 class="left_txt">Hi, I'm Elle</h1>
+    <p class="left_para">A Software Engineer with a love of all things tech. From web development to artificial intelligence, I am always learning something new. </p>
+  </div>
+
+  <div class="about" id="about">
+    <h1 class="right_txt">A Little About Me.</h1>
+    <p class="right_para">I'm originally from Nottingham and if its anything about tech, I'm all over it. <br>
+      I recently graduated with a BSc in Computer Science, and I am looking to make a positive impact in the technology industry. I have a wide set of skills and experience in web development, software engineering and programming. I am always trying to increase my knowledge, gain more experience and adapt my skills. <br> <br>
+
+      I love getting involved in hackathons, conferences and meet-ups. At University, I was Vice President of the Computer Science Society, and I organised social events, and workshops. I hosted a learn to code workshop, and more recently I started speaking at meet-ups. <br> <br>
+
+      On the side, I like to blog, play around with graphic and digital design, and play animal crossing.</p>
+  </div>
+
+  <div class="blog" id="blog">
+    <container class="blog_posts">
+      <h1 class="left_txt">Latest Posts<span class="red">.</span></h1>
+      <ul class="blogs" id="blogs"></ul>
+    </container>
+  </div>
+
+  <div class="work" id="work">
+    <h1 class="left_txt">What I've Been Working On.</h1>
+    <container class="flex">
+      <container class="left">
+        <h2>Work Experience & Education</h2>
+        <ul>
+          <li><strong>BSc Computer Science</strong></li>
+          <li><strong>Brixton Finishing School</strong> - Marketing, Advertising, and Digital
+            Content Summer School (2020)</li>
+          <li><strong>Code First: Girls - Instructor (2018 - 2020).</strong> <a href="https://www.linkedin.com/posts/eleanor-townsend-153424168_ones-to-watch-2019-activity-6540227120638099456-p5op" title="linkedin - Code First Girls Ones To Watch 2019." rel="noopener" target="_blank" class="text_link">
+              Ones To Watch 2019</a></li>
+          <li><strong><a href="https://www.linkedin.com/feed/update/urn:li:activity:6544233252633231360/" title="linkedin - My Internship at Strawberry." rel="noopener" target="_blank" class="text_link">Intern @ Strawberry.</a></strong> Shopify, Web Development.</li>
+        </ul>
+      </container>
+      <container class="right">
+        <h2>Projects & Events</h2>
+        <ul class="right">
+          <li><strong><a href="https://medium.com/@_elletownsend" title="My Medium Blog." rel="noopener" target="_blank" class="text_link">My Blog.</a></strong> Professional / Personal Development, Women In Tech.</li>
+          <li><strong>Speaking</strong>, <a href="https://twitter.com/css_hull/status/1196776288830283776?s=20" title="Tweet - So you want to make websites talk." rel="noopener" target="_blank" class="text_link">Learn To Code,</a> <a href="https://www.linkedin.com/feed/update/urn:li:activity:6643116309611597824/" title="linkedin - Speaking about A.I. and diversity." rel="noopener" target="_blank" class="text_link">A.I and Ethics.</a></li>
+          <li><strong>Dissertation Project.</strong> Node.js, Mongodb, JavaScript, HTML, SCSS.</li>
+          <li><strong><a href="https://codepen.io/_elletownsend" title="Elle Townsend on Codepen." rel="noopener" target="_blank" class="text_link">Codepen Projects.</a></strong> Vue.js, JavaScript, HTML, SASS.</li>
+          <li><strong><a href="https://www.linkedin.com/feed/update/urn:li:activity:6521031014914097152/" title="linkedin - CatalystHack 2019 Winners, Custodian." rel="noopener" target="_blank" class="text_link">Custodian - CatalystHack 2019.</a></strong> Hackathon, Game Development, Women In
+            STEM</li>
+          <li>Applicant / Open Day Demonstrator - Computer Science, University of Hull.</li>
+        </ul>
+      </container>
+    </container>
+  </div>
+
+  <div class="socials" id="contact">
+    <h1 class="icons-title">Where You Can Find Me.</h1>
+    <h3 class="social_handle">@_elletownsend</h3>
+    <container class="icons">
+      <a href="https://codepen.io/_elletownsend" aria-label="Codepen" target="_blank" rel="noopener" class="social_icons">
+        <i class="fab fa-codepen fa-2x"></i>
+      </a>
+
+      <a href="https://github.com/elletownsend" aria-label="Github" target="_blank" rel="noopener" class="social_icons">
+        <i class="fab fa-github-alt fa-2x"></i>
+      </a>
+
+      <a href="https://twitter.com/_elletownsend" aria-label="Twitter" target="_blank" rel="noopener" class="social_icons">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/eleanor-townsend-153424168/" aria-label="LinkedIn" target="_blank" rel="noopener" class="social_icons">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+
+      <a href="https://medium.com/@_elletownsend" aria-label="Medium Blog" target="_blank" rel="noopener" class="social_icons">
+        <i class="fab fa-medium-m fa-2x"></i>
+      </a>
+
+      <a href="https://www.instagram.com/_elletownsend/" aria-label="Instagram" target="_blank" rel="noopener" class="social_icons">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+    </container>
+    <h4>Made with ❤️ by Elle.</h4>
+  </div>
   <script src="js/main.js"></script>
-
-  <body>
-
-    <body class="light-mode" id="body">
-      <nav class="nav" id="nav">
-        <a class="toggle" href="javascript:void(0);" onclick="toggleDarkMode()" aria-label="Dark Mode Toggle"><svg width="59" height="48" viewBox="0 0 59 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M49.3335 22.6661H38.6668C37.9295 22.6661 37.3335 22.07 37.3335 21.3327C37.3335 20.5954 37.9295 19.9994 38.6668 19.9994H49.3335C50.0709 19.9994 50.6669 20.5954 50.6669 21.3327C50.6669 22.07 50.0709 22.6661 49.3335 22.6661Z" fill="#222222" />
-            <path d="M33.3334 22.6661H30.6668C29.9294 22.6661 29.3334 22.07 29.3334 21.3327C29.3334 20.5954 29.9294 19.9994 30.6668 19.9994H33.3334C34.0708 19.9994 34.6668 20.5954 34.6668 21.3327C34.6668 22.07 34.0708 22.6661 33.3334 22.6661Z" fill="#222222" />
-            <path d="M52.6669 5.33266C52.0589 5.33266 51.4509 5.42999 50.8642 5.62066C49.6455 3.79132 47.5935 2.66599 45.3335 2.66599C42.5002 2.66599 40.0668 4.44732 39.1148 6.97667C38.5468 6.77267 37.9455 6.666 37.3335 6.666C34.3921 6.666 32.0001 9.05801 32.0001 11.9994C32.0001 14.9407 34.3921 17.3327 37.3335 17.3327H52.6669C55.9749 17.3327 58.6669 14.6407 58.6669 11.3327C58.6669 8.02467 55.9749 5.33266 52.6669 5.33266ZM52.6669 14.666H51.2589C51.7175 13.878 52.0002 12.9754 52.0002 11.9994C52.0002 11.262 51.4042 10.666 50.6669 10.666C49.9295 10.666 49.3335 11.262 49.3335 11.9994C49.3335 13.47 48.1375 14.666 46.6668 14.666H37.3335C35.8628 14.666 34.6668 13.47 34.6668 11.9994C34.6668 10.5287 35.8628 9.33268 37.3335 9.33268C37.9895 9.33268 38.6268 9.58468 39.1268 10.042C39.5055 10.3927 40.0562 10.4887 40.5335 10.294C41.0108 10.098 41.3335 9.64468 41.3602 9.12734C41.4695 7.00067 43.2135 5.33266 45.3335 5.33266C46.9708 5.33266 48.4228 6.318 49.0375 7.84334C49.1828 8.20467 49.4802 8.48334 49.8495 8.60867C50.2175 8.73134 50.6269 8.69134 50.9589 8.48734C51.5015 8.16334 52.0762 7.99934 52.6669 7.99934C54.5055 7.99934 56.0002 9.49401 56.0002 11.3327C56.0002 13.1714 54.5055 14.666 52.6669 14.666Z" fill="#222222" />
-            <path d="M53.8802 24.8727C53.3309 24.6234 52.6762 24.7794 52.2962 25.2514C49.1828 29.1101 44.5642 31.3221 39.6255 31.3221C30.6481 31.3221 23.3441 24.0181 23.3441 15.0407C23.3441 10.102 25.5561 5.48333 29.4148 2.36998C29.8868 1.98865 30.0428 1.33798 29.7934 0.785979C29.5428 0.233977 28.9561 -0.0806912 28.3561 0.0179758C17.3334 1.87132 9.33337 11.3287 9.33337 22.5047C9.33337 25.2167 9.83337 27.8074 10.7054 30.2221C7.92003 31.5341 5.88135 34.1794 5.42935 37.3341C5.39735 37.3328 5.36402 37.3328 5.33335 37.3328C2.39201 37.3328 0 39.7248 0 42.6661C0 45.6075 2.39201 47.9995 5.33335 47.9995H24.0001C26.4134 47.9995 28.5761 46.9208 30.0441 45.2248C30.7414 45.2901 31.4468 45.3328 32.1614 45.3328C43.3375 45.3328 52.7949 37.3328 54.6482 26.3101C54.7495 25.7127 54.4335 25.1221 53.8802 24.8727ZM24.0001 45.3328H12C10.5294 45.3328 9.33337 44.1368 9.33337 42.6661C9.33337 41.9288 8.73736 41.3328 8.00003 41.3328C7.26269 41.3328 6.66669 41.9288 6.66669 42.6661C6.66669 43.6421 6.94936 44.5448 7.40803 45.3328H5.33335C3.86268 45.3328 2.66668 44.1368 2.66668 42.6661C2.66668 41.1955 3.86268 39.9995 5.33335 39.9995C5.61469 39.9995 5.90935 40.0555 6.23202 40.1701C6.64802 40.3181 7.10669 40.2528 7.46536 39.9928C7.82269 39.7328 8.0267 39.3128 8.01336 38.8728C8.01203 38.8554 8.00136 38.6848 8.00003 38.6661C8.00003 34.9901 10.9907 31.9994 14.6667 31.9994C16.7974 31.9994 18.8161 33.0368 20.0694 34.7741C20.8681 35.8728 21.3334 37.2061 21.3334 38.6661C21.3334 39.4035 21.9294 39.9995 22.6667 39.9995C23.4041 39.9995 24.0001 39.4035 24.0001 38.6661C24.0001 37.2728 23.6788 35.9568 23.1281 34.7674C23.4188 34.7154 23.7081 34.6661 24.0001 34.6661C26.9414 34.6661 29.3334 37.0581 29.3334 39.9995C29.3334 42.9408 26.9414 45.3328 24.0001 45.3328ZM32.1614 42.6661C31.9534 42.6661 31.7508 42.6408 31.5441 42.6355C31.8348 41.8088 32.0001 40.9235 32.0001 39.9995C32.0001 35.5874 28.4121 31.9994 24.0001 31.9994C23.1774 31.9994 22.3614 32.1314 21.5667 32.3941C19.8081 30.4608 17.2987 29.3327 14.6667 29.3327C14.1867 29.3327 13.7187 29.3781 13.2587 29.4474C12.4587 27.2794 12 24.9474 12 22.5047C12 14.2527 16.9401 7.06067 24.2494 3.96999C21.9441 7.15934 20.6761 11.0073 20.6761 15.042C20.6761 25.4901 29.1761 33.9901 39.6241 33.9901C43.6575 33.9901 47.5068 32.7234 50.6962 30.4168C47.6055 37.7261 40.4148 42.6661 32.1614 42.6661Z" fill="#222222" />
-          </svg></a>
-
-        <a class="header_link" href="#contact" tabindex="4">contact</a>
-        <a class="header_link" href="#work" tabindex="3">work</a>
-        <a class="header_link" href="#blog" tabindex="2">blog</a>
-        <a class="header_link" href="#about" tabindex="1">about</a>
-
-        <a class="hamb" href="javascript:void(0);" onclick="hideShowNav()" aria-label="Menu">
-          <i class="fa fa-bars fa-2x"></i></a>
-      </nav>
-      <div class="header">
-        <img class="profileImg" src="img/elle.png" alt="A photo of Elle Townsend">
-        <h1 class="left_txt">Hi, I'm Elle</h1>
-        <p class="left_para">A Software Engineer with a love of all things tech. From web development to artificial intelligence, I am always learning something new. </p>
-      </div>
-
-      <div class="about" id="about">
-        <h1 class="right_txt">A Little About Me.</h1>
-        <p class="right_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <div class="blog" id="blog">
-        <container class="blog_posts">
-          <h1 class="left_txt">Latest Posts<span class="red">.</span></h1>
-          <ul class="blogs" id="blogs"></ul>
-        </container>
-      </div>
-
-      <div class="work" id="work">
-        <h1 class="left_txt">What I've Been Working On.</h1>
-        <container class="flex">
-          <container class="left">
-            <h2>Work Experience & Education</h2>
-            <ul>
-              <li><strong>BSc Computer Science</strong></li>
-              <li><strong>Brixton Finishing School</strong> - Marketing, Advertising, and Digital
-                Content Summer School (2020)</li>
-              <li><strong>Code First: Girls - Instructor (2018 - 2020).</strong> <a href="https://www.linkedin.com/posts/eleanor-townsend-153424168_ones-to-watch-2019-activity-6540227120638099456-p5op" title="linkedin - Code First Girls Ones To Watch 2019." rel="noopener" target="_blank" class="text_link">
-                  Ones To Watch 2019</a></li>
-              <li><strong><a href="https://www.linkedin.com/feed/update/urn:li:activity:6544233252633231360/" title="linkedin - My Internship at Strawberry." rel="noopener" target="_blank" class="text_link">Intern @ Strawberry</a></strong>. Shopify, Web Development.</li>
-            </ul>
-          </container>
-          <container class="right">
-            <h2>Projects & Events</h2>
-            <ul class="right">
-              <li><strong><a href="https://medium.com/@_elletownsend" title="My Medium Blog." rel="noopener" target="_blank" class="text_link">My Blog</a></strong>. Professional / Personal Development, Women In Tech.</li>
-              <li><strong>Speaking</strong>, <a href="https://twitter.com/css_hull/status/1196776288830283776?s=20" title="Tweet - So you want to make websites talk." rel="noopener" target="_blank" class="text_link">Learn To Code,</a> <a href="https://www.linkedin.com/feed/update/urn:li:activity:6643116309611597824/" title="linkedin - Speaking about A.I. and diversity." rel="noopener" target="_blank" class="text_link">A.I.</a></li>
-              <li><strong>Dissertation Project.</strong> Node.js, Mongodb, JavaScript, HTML, SASS.</li>
-              <li><strong><a href="https://codepen.io/_elletownsend" title="Elle Townsend on Codepen." rel="noopener" target="_blank" class="text_link">Codepen Projects.</a></strong> Vue.js, JavaScript, HTML, SASS.</li>
-              <li><strong><a href="https://www.linkedin.com/feed/update/urn:li:activity:6521031014914097152/" title="linkedin - CatalystHack 2019 Winners, Custodian." rel="noopener" target="_blank" class="text_link">Custodian - CatalystHack 2019.</a></strong> Hackathon, Game Development, Women In
-                STEM</li>
-              <li>Applicant / Open Day Demonstrator - Computer Science, University of Hull.</li>
-            </ul>
-          </container>
-        </container>
-      </div>
-
-      <div class="socials" id="contact">
-        <h1 class="icons-title">Where You Can Find Me.</h1>
-        <h3 class="social_handle">@_elletownsend</h3>
-        <container class="icons">
-          <a href="https://codepen.io/_elletownsend" aria-label="Codepen" target="_blank" rel="noopener" class="social_icons">
-            <i class="fab fa-codepen fa-2x"></i>
-          </a>
-
-          <a href="https://github.com/elletownsend" aria-label="Github" target="_blank" rel="noopener" class="social_icons">
-            <i class="fab fa-github-alt fa-2x"></i>
-          </a>
-
-          <a href="https://twitter.com/_elletownsend" aria-label="Twitter" target="_blank" rel="noopener" class="social_icons">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/eleanor-townsend-153424168/" aria-label="LinkedIn" target="_blank" rel="noopener" class="social_icons">
-            <i class="fab fa-linkedin-in fa-2x"></i>
-          </a>
-
-          <a href="https://medium.com/@_elletownsend" aria-label="Medium Blog" target="_blank" rel="noopener" class="social_icons">
-            <i class="fab fa-medium-m fa-2x"></i>
-          </a>
-
-          <a href="https://www.instagram.com/_elletownsend/" aria-label="Instagram" target="_blank" rel="noopener" class="social_icons">
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-        </container>
-      </div>
-    </body>
-
-  </body>
+</body>
 
 </html>

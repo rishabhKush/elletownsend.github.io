@@ -1,12 +1,5 @@
 .work {
   padding: 60px 0;
-  background: $cream;
-  color: $text-colour;
-
-  background-image: url(/svg/monogram.svg);
-  background-repeat: no-repeat;
-  background-position: 5% 95%;
-  background-size: 50px;
 
     @media screen and (max-width: 1200px) {
         h2 {
@@ -14,6 +7,16 @@
             text-align: center;
     }
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .work ul {
+    padding-left: 0px;
+      li {
+        text-align: center;
+      }
+  }
+
 }
 
 .right_txt {

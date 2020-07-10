@@ -1,7 +1,6 @@
 .blog {
   padding-top: 15px;
   padding-bottom: 15px;
-  background: $bg-cream;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 
@@ -17,7 +16,6 @@
       padding-bottom: 4%;
       a {
         text-decoration: none;
-        color: $text-colour;
       }
       .topImg {
         height: 172px;
@@ -25,8 +23,6 @@
         object-fit: cover;
       }
       .moreBtn {
-        border: 2px solid $text-colour;
-        background-color: $bg-cream;
         font-size: 0.8em;
 
         padding: 9px;
