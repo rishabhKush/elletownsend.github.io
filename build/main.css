@@ -432,6 +432,18 @@ nav .toggle {
   text-underline-offset: 5px;
 }
 
+.right_txt {
+  text-align: right;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .right_txt {
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
 .right_para {
   text-align: right;
   margin-right: 100px;
@@ -447,7 +459,7 @@ nav .toggle {
 
 @media screen and (max-width: 425px) {
   .right_para {
-    margin: 0 25px;
+    margin: 5px 25px;
   }
 }
 
@@ -532,32 +544,18 @@ nav .toggle {
   padding: 60px 0;
 }
 
+.work h2 {
+  text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
   .work h2 {
     margin-right: 0px;
-    text-align: center;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .work ul {
-    padding-left: 0px;
-  }
-  .work ul li {
-    text-align: center;
-  }
-}
-
-.right_txt {
-  text-align: right;
-  margin-right: 100px;
-}
-
-@media screen and (max-width: 1200px) {
-  .right_txt {
-    margin-right: 0px;
-    text-align: center;
-  }
+.work ul {
+  padding-left: 0px;
 }
 
 .flex {
@@ -572,7 +570,7 @@ nav .toggle {
 }
 
 .flex container {
-  padding: 0 2%;
+  padding: 0 5%;
 }
 
 .flex container li {

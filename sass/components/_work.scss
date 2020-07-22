@@ -1,33 +1,20 @@
 .work {
   padding: 60px 0;
+  
+  h2 {
+    text-align: center;
+  }
 
-    @media screen and (max-width: 1200px) {
-        h2 {
-            margin-right: 0px;
-            text-align: center;
+  @media screen and (max-width: 1200px) {
+    h2 {
+      margin-right: 0px;
     }
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .work ul {
+.work ul {
     padding-left: 0px;
-      li {
-        text-align: center;
-      }
   }
-
-}
-
-.right_txt {
-  text-align: right;
-  margin-right: 100px;
-
-  @media screen and (max-width: 1200px) {
-    margin-right: 0px;
-    text-align: center;
-  }
-}
 
 .flex {
   display: flex;
@@ -35,7 +22,7 @@
   justify-content: space-evenly;
 
   container {
-    padding: 0 2%;
+    padding: 0 5%;
     
     li {
       margin: 2% 0;
