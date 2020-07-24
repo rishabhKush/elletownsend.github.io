@@ -1,30 +1,20 @@
 .work {
   padding: 60px 0;
-  background: $cream;
-  color: $text-colour;
+  
+  h2 {
+    text-align: center;
+  }
 
-  background-image: url(/svg/monogram.svg);
-  background-repeat: no-repeat;
-  background-position: 5% 95%;
-  background-size: 50px;
-
-    @media screen and (max-width: 1200px) {
-        h2 {
-            margin-right: 0px;
-            text-align: center;
+  @media screen and (max-width: 1200px) {
+    h2 {
+      margin-right: 0px;
     }
   }
 }
 
-.right_txt {
-  text-align: right;
-  margin-right: 100px;
-
-  @media screen and (max-width: 1200px) {
-    margin-right: 0px;
-    text-align: center;
+.work ul {
+    padding-left: 0px;
   }
-}
 
 .flex {
   display: flex;
@@ -32,7 +22,7 @@
   justify-content: space-evenly;
 
   container {
-    padding: 0 2%;
+    padding: 0 5%;
     
     li {
       margin: 2% 0;
