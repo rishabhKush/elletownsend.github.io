@@ -1,0 +1,32 @@
+.work {
+  padding: 60px 0;
+  
+  h2 {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    h2 {
+      margin-right: 0px;
+    }
+  }
+}
+
+.work ul {
+    padding-left: 0px;
+  }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  container {
+    padding: 0 5%;
+    
+    li {
+      margin: 2% 0;
+      max-width: 50ch;
+    }
+  }
+}

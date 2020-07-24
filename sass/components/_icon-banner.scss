@@ -1,39 +1,27 @@
-.icons {
-	padding: 2% 20%;
-	
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	
-	.fa-codepen {
-		color: #CCB2BD;
-	}
+.socials {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 
-	.fa-github-alt {
-		color: #222222;
-	}
-	
-	.fa-twitter {
-		color: #BAE3DF;
-	}
-	
-	.fa-linkedin-in {
-		color: #F6EABC;
-	}
-	
-	.fa-medium {
-		color: #CCB2BD;
-	}
+  h1,
+  h3,
+  h4 {
+    text-align: center;
+  }
+}
+
+.icons {
+  padding: 2% 20%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 @media screen and (max-width: 900px) {
-	.icons {
-		justify-content: center;
-		
-		i {
-			padding: 0 10px;
-		}
-	}
+  .icons {
+    justify-content: space-between;
+  }
 }
-
-
