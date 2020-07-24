@@ -6,8 +6,6 @@ html {
 
 body {
   background: #FFFCF9;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
   overflow-x: hidden;
   margin: 0;
 }
@@ -114,10 +112,6 @@ body.dark-mode .nav .toggle path {
 body.dark-mode .header {
   background-color: #222222;
   color: #F9F2E8;
-}
-
-body.dark-mode .header .profileImg {
-  border: 15px solid #222222;
 }
 
 body.dark-mode .about {
@@ -270,9 +264,8 @@ nav .toggle {
 }
 
 .profileImg {
-  max-height: 300px;
+  max-height: 250px;
   background-color: #E4C0C3;
-  border: 15px solid white;
   border-radius: 100%;
   float: right;
   position: relative;
