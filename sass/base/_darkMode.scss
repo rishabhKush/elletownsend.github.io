@@ -89,6 +89,29 @@ body.light-mode {
       color: $red;
     }
   }
+
+  .blog-post {
+    .blog-title, .blog-sub, span, p {
+      color: $text-colour;
+    }
+  }
+
+  .blog-archive {
+    h1 {
+      color: $text-colour;
+    }
+    .archive-link {
+      border-color: rgba(34, 34, 34, 0.5);
+
+      a, p {
+        color: $text-colour;
+      }
+    }
+  }
+
+  .return {
+    color: $text-colour;
+  }
 }
 
 body.dark-mode {
@@ -174,5 +197,28 @@ body.dark-mode {
     .social_icons:nth-child(3n + 2) {
         color: $red;
     }
+  }
+
+  .blog-post {
+    .blog-title, .blog-sub, span, p {
+      color: $cream;
+    }
+  }
+
+  .blog-archive {
+    h1 {
+      color: $cream;
+    }
+    .archive-link {
+      border-color: rgba(249, 242, 232, 0.5);
+
+      a, p {
+        color: $cream;
+      }
+    }
+  }
+
+  .return {
+    color: $cream;
   }
 }
