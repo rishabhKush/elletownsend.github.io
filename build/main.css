@@ -404,16 +404,65 @@ nav .toggle {
 }
 
 .blog-post, .blog-archive {
-  width: 80%;
+  max-width: 680px;
   margin: 0 auto;
   padding: 75px 0;
+}
+
+.blog-post .blog-sub, .blog-archive .blog-sub {
+  margin-top: -2%;
+  font-size: 19px;
+  width: 85%;
+}
+
+.blog-post .date, .blog-post .img_caption, .blog-archive .date, .blog-archive .img_caption {
+  font-family: "Poppins";
+}
+
+.blog-post p {
+  font-size: 19px;
+}
+
+.blog_content {
+  margin: 35px 0;
 }
 
 .archive-link {
   border: 1px solid;
   border-radius: 5px;
-  padding: 2%;
   margin: 5% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.archive-link .card_desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 30px;
+}
+
+.archive-link .card_desc h2, .archive-link .card_desc p {
+  margin: 5px 0;
+}
+
+.archive-link .img_thumb {
+  height: 200px;
+  width: 270px;
 }
 
 .archive-link a {
@@ -425,6 +474,19 @@ nav .toggle {
   margin: 37px;
   text-decoration: none;
   font-weight: 700;
+}
+
+.featured_img {
+  max-width: 680px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.img_caption {
+  text-align: center;
+  display: block;
 }
 
 .header {

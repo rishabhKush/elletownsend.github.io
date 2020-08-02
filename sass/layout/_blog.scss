@@ -1,14 +1,56 @@
 .blog-post, .blog-archive {
-    width: 80%;
+    // width: 80%;
+    max-width: 680px; 
+    // maybe have a media query for this?
     margin: 0 auto;
     padding: 75px 0;
+
+    .blog-sub {
+        margin-top: -2%;
+        font-size: 19px;
+        width: 85%;
+    }
+
+    .date, .img_caption {
+        font-family: $poppins;
+    }
+}
+
+.blog-post {
+    p {
+        font-size: 19px;
+    }
+}
+
+.blog_content {
+    margin: 35px 0;
 }
 
 .archive-link {
     border: 1px solid;
     border-radius: 5px;
-    padding: 2%;
     margin: 5% 1%;
+
+    display: flex;
+    flex-direction: row;
+
+    .card_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        padding: 30px;
+
+        h2, p {
+            margin: 5px 0;
+        }
+    }
+
+    .img_thumb {
+        height: 200px;
+        width: 270px;
+    }
 
     a {
         text-decoration: none;
@@ -20,4 +62,19 @@
     margin: 37px;
     text-decoration: none;
     font-weight: 700;
+}
+
+.featured_img {
+    max-width: 680px;
+    // max-height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    // media query
+}
+
+.img_caption {
+    text-align: center;
+    display: block;
 }
