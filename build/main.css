@@ -211,6 +211,10 @@ body.light-mode .blog-archive .archive-link a, body.light-mode .blog-archive .ar
   color: #222222;
 }
 
+body.light-mode .blog-content h2 {
+  color: #222222;
+}
+
 body.light-mode .return {
   color: #222222;
 }
@@ -324,6 +328,10 @@ body.dark-mode .blog-archive .archive-link a, body.dark-mode .blog-archive .arch
   color: #F9F2E8;
 }
 
+body.dark-mode .blog-content h2 {
+  color: #F9F2E8;
+}
+
 body.dark-mode .return {
   color: #F9F2E8;
 }
@@ -415,7 +423,7 @@ nav .toggle {
   width: 85%;
 }
 
-.blog-post .date, .blog-post .img_caption, .blog-archive .date, .blog-archive .img_caption {
+.blog-post .date, .blog-post .img-caption, .blog-archive .date, .blog-archive .img-caption {
   font-family: "Poppins";
 }
 
@@ -476,7 +484,7 @@ nav .toggle {
   font-weight: 700;
 }
 
-.featured_img {
+.featured-img {
   max-width: 680px;
   display: block;
   margin: 0 auto;
@@ -484,7 +492,7 @@ nav .toggle {
   margin-bottom: 5%;
 }
 
-.img_caption {
+.img-caption {
   text-align: center;
   display: block;
 }

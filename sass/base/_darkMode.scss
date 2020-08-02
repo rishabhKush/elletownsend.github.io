@@ -109,6 +109,12 @@ body.light-mode {
     }
   }
 
+  .blog-content {
+    h2 {
+      color: $text-colour;
+    }
+  }
+
   .return {
     color: $text-colour;
   }
@@ -215,6 +221,12 @@ body.dark-mode {
       a, p {
         color: $cream;
       }
+    }
+  }
+
+  .blog-content {
+    h2 {
+      color: $cream;
     }
   }
 

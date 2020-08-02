@@ -11,7 +11,7 @@
         width: 85%;
     }
 
-    .date, .img_caption {
+    .date, .img-caption {
         font-family: $poppins;
     }
 }
@@ -64,7 +64,7 @@
     font-weight: 700;
 }
 
-.featured_img {
+.featured-img {
     max-width: 680px;
     // max-height: 400px;
     display: block;
@@ -74,7 +74,7 @@
     // media query
 }
 
-.img_caption {
+.img-caption {
     text-align: center;
     display: block;
 }
