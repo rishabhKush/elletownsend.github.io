@@ -2,3 +2,4 @@
 /blog/*.md
 /blog/posts.json
 /blog/index.html
+**/.DS_Store

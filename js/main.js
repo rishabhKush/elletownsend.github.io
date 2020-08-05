@@ -10,5 +10,33 @@ function hideShowNav() {
 function toggleDarkMode() {
     var body = document.getElementById("body");
     var currentClass = body.className;
-    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+
+    if (currentClass == "dark-mode") {
+        body.className = "light-mode";
+        localStorage.removeItem('dark');
+    }
+    else {
+        body.className = "dark-mode"
+        localStorage.setItem('dark', true);
+    }
+}
+
+if (localStorage.getItem('dark')) {
+    body.className = "dark-mode";
+}
+
+button = document.getElementById("topBtn");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // Safari
+    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
 }
