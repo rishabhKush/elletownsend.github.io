@@ -479,11 +479,13 @@ nav .toggle {
 
 .blog_post p {
   font-size: 19px;
+  word-wrap: break-word;
 }
 
 .blog_post a {
   color: #DBB6B9;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
 .blog_post ul li {
