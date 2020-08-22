@@ -92,3 +92,22 @@ p {
     }
 
 }
+
+.blog_sub {
+    font-family: $poppins;
+    font-weight: normal;
+}
+
+.blog_post {
+    ul li {
+        font-size: 1.1875em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    .gist span {
+      font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    }
+}
