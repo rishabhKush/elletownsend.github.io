@@ -612,7 +612,7 @@ nav .toggle {
 
 @media screen and (max-width: 400px) {
   .archive_link .card_desc h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .archive_link .card_desc p {
     font-size: 10px;
