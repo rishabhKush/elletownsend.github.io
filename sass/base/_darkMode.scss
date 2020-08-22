@@ -232,6 +232,10 @@ body.dark-mode {
     .blog_title, .blog_heading, .blog_sub, span, p, h3, .footer_title, hr {
       color: $cream;
     }
+
+    .gist span {
+      color: $text-colour;
+    }
   }
 
   .footer_tags .footer_tag, .tags .post_tag {
