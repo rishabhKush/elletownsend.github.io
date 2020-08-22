@@ -104,7 +104,7 @@ If you don't use <code>eleventy --serve</code>, remember to run <code>eleventy</
 <li>Add this code to it:</li>
 </ul>
 <script src="https://gist.github.com/elletownsend/e016332b1befaa2741612950b4858cfb.js"></script>
-<p>What we are doing here is utilising the <code>blog</code> tag we included in the YAML Front Matter of the blog post. If we tag every post we create with a common tag, we can use the <code>collection</code> of this tag (<code>collections.blog</code>) as a list of all our posts that can be looped through using a Liquid for-loop.
+<p>What we are doing here is utilising the <code>blog</code> tag we included in the YAML Front Matter of the blog post. If we tag every post we create with a common tag, we can use the <code>collection</code> of posts with this tag (<code>collections.blog</code>) as a list of all our posts that can be looped through using a Liquid for-loop.
 n the code above, we are going through every post tagged <code>blog</code>, and generating a list (not an actual list, but kind of) that shows the title of every post, with a link to the post, and the date the post was created.</p>
 <p>To get the posts to be listed in 'newest first' order, we add <code>reversed</code> to the end of the for loop.</p>
 <p>Now, if we look back in the browser at our site, specifically at <code>http://localhost:8080/</code>, we should be able to see our blog post title on the home page, and if we click it, it will take us to the post itself. It may not look like much, but this is the bare bones of our blog finished!</p>
@@ -117,6 +117,7 @@ n the code above, we are going through every post tagged <code>blog</code>, and 
 <h3>Resources</h3>
 <ul>
 <li><a href="https://www.11ty.dev">https://www.11ty.dev</a></li>
+<li>https://www.11ty.dev/docs/</li>
 <li><a href="https://www.filamentgroup.com/lab/build-a-blog/">https://www.filamentgroup.com/lab/build-a-blog/</a></li>
 </ul>
 
