@@ -13,15 +13,15 @@ function toggleDarkMode() {
 
     if (currentClass == "dark-mode") {
         body.className = "light-mode";
-        localStorage.removeItem('dark');
+        sessionStorage.removeItem('dark');
     }
     else {
         body.className = "dark-mode"
-        localStorage.setItem('dark', true);
+        sessionStorage.setItem('dark', true);
     }
 }
 
-if (localStorage.getItem('dark')) {
+if (sessionStorage.getItem('dark')) {
     body.className = "dark-mode";
 }
 
