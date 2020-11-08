@@ -1,6 +1,6 @@
 window.onload = function () {
     const ul = document.getElementById('blogs');
-    const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@_elletownsend';
+    const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@elletownsend';
 
     fetch(url)
         .then((res) => res.json())
