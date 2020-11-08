@@ -58,7 +58,7 @@ p {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 1.1em;
-  max-width: 33ch;
+  max-width: 29ch;
 }
 
 .moreBtn {
@@ -93,6 +93,13 @@ p {
   }
   .right_para, .left_para {
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blog_title {
+    max-width: 100%;
+    padding: 0 50px;
   }
 }
 
