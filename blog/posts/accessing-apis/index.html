@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="null" />
-    <meta name="author" content="Elle Townsend" /><meta property="og:description" content="null" />
+    <meta name="description" content="Knowing how to access and use APIs is an important skill for developers. Example API requests with and without API keys." />
+    <meta name="author" content="Elle Townsend" /><meta property="og:description" content="Knowing how to access and use APIs is an important skill for developers. Example API requests with and without API keys." />
     <meta property="og:image" content="/img/blog-img/Art-of-accessing-apis-header.png" />
 
     <meta name="twitter:site" content="@_elletownsend" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="The Art of Accessing APIs | Elle Townsend" />
-    <meta name="twitter:description" content="null" />
+    <meta name="twitter:description" content="Knowing how to access and use APIs is an important skill for developers. Example API requests with and without API keys." />
     <meta name="twitter:image" content="/img/blog-img/Art-of-accessing-apis-header.png" />
 
     <title>The Art of Accessing APIs | Elle Townsend</title>
@@ -49,9 +49,63 @@
         <h2 class="blog_sub">Everything You Need To Know To Become a Master of APIs</h2>
         <span class="date">Nov 28, 2020</span>
         <img class="featured_img" src="/img/blog-img/Art-of-accessing-apis-header.png" alt="Art of accessing APIs - everything you need to know to become a master of APIs.">
-        <span class="img_caption">Photo by Elle</span>
+        <span class="img_caption">Photo by Me.</span>
         <div class="blog_content">
-            
+            <p>APIs are incredibly powerful and exciting tools that make up a large part of modern technology. Knowing what they are and how to use them is a vital skill every developer should have in their arsenal.</p>
+<h2>What is an API?</h2>
+<p>To put it plainly, an <strong>API</strong> or <strong>'Application Programming Interface'</strong> is an intermediary software that allows for communication between two applications. Think of them like a waiter. You sit down at a restaurant and order some food from the menu (you are an application), you convey your order request to the waiter (the API), who then communicates your request for food (data) to the kitchen (the second application). When your food (data) is ready, the waiter brings it straight to your table. That's exactly what an API does - manages requests for data &amp; responses between two applications.</p>
+<p>There are a bunch of APIs out there (I listed my favourites here: <a href="https://www.elletownsend.co.uk/blog/posts/top-5-apis/">https://www.elletownsend.co.uk/blog/posts/top-5-apis/</a>, and there is a great list of free public APIs here: <a href="https://github.com/public-apis/public-apis">https://github.com/public-apis/public-apis</a>). There is no end to the streams of ideas and projects that could stem from utilising these APIs. But if you want to start getting into the wonders of consuming data from APIs, you should read up on how to use them.</p>
+<p>That's where this blog post comes in! I want to share my love of APIs with you and cover how to use them so that we can all use APIs and all that fun stuff.</p>
+<hr>
+<h2>Some Things To Note</h2>
+<p>There are a few nuances to go through when it comes to approaching APIs for the first time.</p>
+<p>When APIs are created, they can be secured using forms of authentication and unique codes that identify who is calling the API. These are put in place so that the owners of the API can keep track of who is using / consuming from the API and prevent malicious use and abuse. Depending on which API you are planning on using, that will determine what you will need to do in order to get access. Most APIs will require you to register for an API key, and use this as an identifier for every call you make to the API. <strong>(Note on API keys below)</strong></p>
+<p>Secondly, API owners sometimes enforce a limit on the number of requests that can be made to the API in a given time-frame in order to prevent users from overwhelming the service. This is called a 'rate limit', and it varies from API to API.</p>
+<hr>
+<h2>Documentation is a Dev's Best Friend</h2>
+<p>You might be thinking, Elle, this is quite a lot of information I need to gather before I access an API, where am I supposed to find it all? I would advise you to get familiar with the API's documentation.</p>
+<p>In the documentation of any API, the developers should detail how to get an API key, what the rate limit is (if there is one), and information on the API's endpoints.</p>
+<p>When accessing an API, the place your request is sent to and the response is received is called an 'endpoint'. API endpoints come in the form of URLs, and depending on what kind of request you are trying to make, or what data you want back, the API documentation should point you to the endpoint you are looking for.</p>
+<p>For example, the endpoint of the <a href="https://swapi.dev/">Star Wars API</a> that has all the data on films is:</p>
+<p><code>https://swapi.dev/api/films/</code></p>
+<p>and making a request to this endpoint returns information on all Star Wars films.</p>
+<hr>
+<h2>Know What You're Asking For</h2>
+<p>The most important thing to consider when writing and debugging your API requests (&quot;Why is this not working?&quot; &quot;I know it's there, why is it undefined??&quot;) is what the response you are expecting looks like. The best places to find this out are the API documentation or good old console.log the response and take a look yourself. As you will see in the following code examples, no two APIs are exactly the same, and so the way you access the data from their respective responses will be different too. These little nuances will be the root of lots of your API problems and debugging, but now you know where to look, you should be able to find out how to access that data and use it in your applications.</p>
+<p>Now, onto the good stuff…</p>
+<hr>
+<h3>Making Requests</h3>
+<p><strong>Search for a Star Wars character by name - (API without an API Key)</strong></p>
+<p>Endpoint: <code>https://www.swapi.tech/api/people/</code>, Query Parameters: <code>name = &quot;r2-d2&quot;</code>.</p>
+<h3>Example (JavaScript &amp; Axios)</h3>
+<script src="https://gist.github.com/elletownsend/e6c5fcc13e621b2ba03bd9e8ef25cc69.js"></script>
+<h3>Example (Python)</h3>
+<script src="https://gist.github.com/elletownsend/9e4380c80b6413300d4d37486724ba32.js"></script>
+<p><strong>Search for a Movie by  title - (API with an API Key)</strong></p>
+<p>Endpoint: <code>https://api.themoviedb.org/3/search/movie</code>, Query Parameters: <code>query = &quot;Harry Potter&quot;</code>.</p>
+<h3>Example (JavaScript &amp; Axios)</h3>
+<script src="https://gist.github.com/elletownsend/3aedfeecc173afef911d144afeb4983b.js"></script>
+<h3>Example (Python)</h3>
+<script src="https://gist.github.com/elletownsend/ef2dcc0af0c595493a70b532e07a95ce.js"></script>
+<hr>
+<h2>A Note on API Keys 🔑</h2>
+<p>If you're using an API that requires an API key, please keep that key a secret. If you're not planning on uploading your code or hosting your project publicly, you should be fine, but if you are going to upload it to GitHub or host it live then take these steps to keep your API key secret.</p>
+<h3>In JavaScript (React)</h3>
+<p>In your project folder, create a file called <code>.env</code>, a file where we can store environment variables. In this file on the first line, you're going to want to type <code>REACT_APP_API_KEY=</code> and then paste your API key. No quotes, no ;</p>
+<p>Then when you want to use this environment variable in your code, refer to it using <code>process.env.REACT_APP_API_KEY</code> instead of a string containing your API key. Don't forget to also add your <code>.env</code> file to your <code>.gitignore</code>.</p>
+<h3>In Python</h3>
+<p><a href="https://medium.com/dataseries/hiding-secret-info-in-python-using-environment-variables-a2bab182eea">https://medium.com/dataseries/hiding-secret-info-in-python-using-environment-variables-a2bab182eea</a> - This is a great tutorial blog post on using environment variables in Python.</p>
+<hr>
+<h3>Resources</h3>
+<ul>
+<li>Using Axios - <a href="https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/">https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/</a></li>
+<li>List of lots of APIs - <a href="https://github.com/public-apis/public-apis">https://github.com/public-apis/public-apis</a></li>
+<li>The Movie DB API - <a href="https://www.themoviedb.org/documentation/api">https://www.themoviedb.org/documentation/api</a></li>
+<li>Star Wars API - <a href="https://www.swapi.tech/">https://www.swapi.tech/</a></li>
+<li>Using environment variables in React - <a href="https://medium.com/better-programming/using-environment-variables-in-reactjs-9ad9c5322408">https://medium.com/better-programming/using-environment-variables-in-reactjs-9ad9c5322408</a></li>
+<li>Using environment variables in Python - <a href="https://medium.com/dataseries/hiding-secret-info-in-python-using-environment-variables-a2bab182eea">https://medium.com/dataseries/hiding-secret-info-in-python-using-environment-variables-a2bab182eea</a></li>
+</ul>
+
         </div>
         <div class="footer">
             <div class="footer_tags">
