@@ -57,7 +57,12 @@
 
   code {
     padding: 0.75%;
-    line-height: 20px;
+    line-height: 27px;
+    font-size: 18px;
+  }
+
+  pre {
+    white-space: pre-wrap;
   }
 
   @media screen and (max-width: 425px) {

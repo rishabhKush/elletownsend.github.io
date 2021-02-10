@@ -101,7 +101,7 @@
 <p>In order to get our server up and running, run:</p>
 <pre><code>json-server --watch db.json --port 8080
 </code></pre>
-<p>If we now make a request to http://localhost:8080/dogs/1, we should get back:</p>
+<p>If we now make a request to <a href="http://localhost:8080/dogs/1">http://localhost:8080/dogs/1</a>, we should get back:</p>
 <pre><code>{ &quot;id&quot;: 1, &quot;breed&quot;: &quot;pembroke-welsh-corgi&quot;, &quot;name&quot;: &quot;charles&quot; }
 </code></pre>
 <p>The following HTTP endpoints will be created automatically by JSON server too:</p>
@@ -123,10 +123,10 @@ PATCH /cats/{id}
 DELETE /dogs/{id}
 DELETE /cats/{id}
 </code></pre>
-<p>With JSON server, we can filter results by adding query parameters to your requests. If we hit http://localhost:8080/cats?breed=siamese, it should return an array of all the cat objects in the data that match the given criteria.</p>
-<p>We can also do a full text search with the <code>p</code> parameter, http://localhost:8080/cats?q=m</p>
-<p>All of this information and more can be found in much greater detail in the JSON Server GitHub repo - https://github.com/typicode/json-server
-If you'd like to look into this a little further and find out how to deploy your JSON Server API, I recommend Ania Kubow's YouTube tutorial on how to create &amp; deploy a mock API (https://youtu.be/FLnxgSZ0DG4)</p>
+<p>With JSON server, we can filter results by adding query parameters to your requests. If we hit <a href="http://localhost:8080/cats?breed=siamese">http://localhost:8080/cats?breed=siamese</a>, it should return an array of all the cat objects in the data that match the given criteria.</p>
+<p>We can also do a full text search with the <code>p</code> parameter, <a href="http://localhost:8080/cats?q=m">http://localhost:8080/cats?q=m</a></p>
+<p>All of this information and more can be found in much greater detail in the JSON Server GitHub repo - <a href="https://github.com/typicode/json-server">https://github.com/typicode/json-server</a>
+If you'd like to look into this a little further and find out how to deploy your JSON Server API, I recommend <a href="https://youtu.be/FLnxgSZ0DG4">Ania Kubow's YouTube tutorial on how to create &amp; deploy a mock API</a></p>
 <hr>
 <h2>🌿 Node.js &amp; Express</h2>
 <p><strong>Requirements</strong>: <a href="https://nodejs.org/en/">Node</a> installed</p>
@@ -205,8 +205,8 @@ app.get('/cats/:id', (req, res) =&gt; {
   res.status(200).json(response);
 });
 </code></pre>
-<p>We can now visit http://localhost:8080/dogs/ and http://localhost:8080/dogs/1 or http://localhost:8080/cats/ (etc.) and see our API working properly. We have created a very simple Node API!</p>
-<p>If you want to develop this further and add more endpoints and functionality to your Node API, I recommend Ankit Maheshwari's CRUD Rest API tutorial from JavaScript In Plain English (https://medium.com/javascript-in-plain-english/create-rest-api-web-services-using-node-js-and-express-js-with-crud-operations-ff790d6ae030).</p>
+<p>We can now visit <a href="http://localhost:8080/dogs/">http://localhost:8080/dogs/</a> and <a href="http://localhost:8080/dogs/1">http://localhost:8080/dogs/1</a> or <a href="http://localhost:8080/cats/">http://localhost:8080/cats/</a> (etc.) and see our API working properly. We have created a very simple Node API!</p>
+<p>If you want to develop this further and add more endpoints and functionality to your Node API, I recommend <a href="https://medium.com/javascript-in-plain-english/create-rest-api-web-services-using-node-js-and-express-js-with-crud-operations-ff790d6ae030%3E">Ankit Maheshwari's CRUD Rest API tutorial from JavaScript In Plain English</a>.</p>
 <hr>
 <h2>🐍 Python &amp; Flask RESTful</h2>
 <p><strong>Requirements</strong>: <a href="https://www.python.org/downloads/">Python 3</a> &amp; PIP installed</p>
@@ -267,11 +267,11 @@ api.add_resource(Cat, '/cats/&lt;int:cat_id&gt;')
     app.run(debug=True)
 </code></pre>
 <p>Here we enabling Flask debugging mode when we run our code so it reloads when changes are made (like nodemon) and gives us more verbose error messages when things go wrong.</p>
-<p>Now, if you try http://localhost:5000/dogs, http://localhost:5000/cats, http://localhost:5000/dogs/1 etc. you will see your API working perfectly!</p>
-<p>If you'd like to develop your Python Flask API project further, I recommend RapidAPI's guide on Python APIs- https://rapidapi.com/blog/how-to-build-an-api-in-python/</p>
+<p>Now, if you try <a href="http://localhost:5000/dogs">http://localhost:5000/dogs</a>, <a href="http://localhost:5000/cats">http://localhost:5000/cats</a>, <a href="http://localhost:5000/dogs/1">http://localhost:5000/dogs/1</a> etc. you will see your API working perfectly!</p>
+<p>If you'd like to develop your Python Flask API project further, I recommend RapidAPI's guide on Python APIs - <a href="https://rapidapi.com/blog/how-to-build-an-api-in-python/">https://rapidapi.com/blog/how-to-build-an-api-in-python/</a></p>
 <hr>
 <p>And there you have it, REST APIs 3 different ways! I hope this post helps you get started in developing your own API.</p>
-<p>All the example files for these 3 methods can be found here - https://github.com/elletownsend/create-an-api</p>
+<p>All the example files for these 3 methods can be found here - <a href="https://github.com/elletownsend/create-an-api">https://github.com/elletownsend/create-an-api</a></p>
 
         </div>
         <div class="footer">
