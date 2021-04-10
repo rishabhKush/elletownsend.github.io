@@ -68,7 +68,7 @@
 <p>Mocha can be used alongside most <a href="https://stackoverflow.com/questions/25678063/whats-the-difference-between-assertion-library-testing-framework-and-testing-e/25678226#25678226">assertion libraries</a> (a tool that is in charge of the verification of your test results), but the most popular Node.js assertion library used with Mocha is called Chai.</p>
 <h3>Chai &amp; Chai-http 🫖</h3>
 <p>Chai is a Behaviour / Test driven design assertion library used frequently with Mocha in Node.js testing. Chai-http is a plugin for Chai that allows us to write HTTP integration tests with Chai.</p>
-<p>The hot-beverage themed pair work together to create a great way to get started our Node.js &amp; Express projects.</p>
+<p>The hot-beverage themed pair work together to create a great way to get started with testing our Node.js &amp; Express projects.</p>
 <hr>
 <h2>The Set Up</h2>
 <p>Requirements: <a href="https://nodejs.org/en/">Node.js installed.</a></p>
@@ -105,7 +105,7 @@
 <p>In this example, we are using the <code>assert</code> assertion style, but Chai offers other styles of assertion, such as <code>should</code> or <code>expect</code>. You can find out the differences between them in the <a href="https://www.chaijs.com/guide/styles/">Chai Assertion Styles Guide.</a></p>
 <p>When this test is run, our <code>getRandom</code> function is called, and the test makes assertions on the result. We assert (verify) that the returned result (<code>random</code>) is not null, is a number, and is at least 0, but no more than 100. If all these assertions pass, that means our code is functioning as it is supposed to, and our unit passed it's unit test.</p>
 <h3>Integration Tests</h3>
-<p>Testing the functionality of out API endpoint constitutes an integration test as we are testing how all the individual parts of our program work together to send a response back when our <code>/random</code> endpoint is hit. In order to do this, we need to use <code>chai-http</code>. This package allows us to make HTTP requests to our server during tests.</p>
+<p>Testing the functionality of our API endpoint constitutes an integration test as we are testing how all the individual parts of our program work together to send a response back when our <code>/random</code> endpoint is hit. In order to do this, we need to use <code>chai-http</code>. This package allows us to make HTTP requests to our server during tests.</p>
 <p>Because of the use of asynchronous code and promises in the implementation of this functionality, we have to approach the integration test for this code slightly differently. We pass a callback inside the <code>it</code> function that calls and tests our asynchronous code (same as before).</p>
 <script src="https://gist.github.com/elletownsend/b23100a01741d4bd099cceee20d160a1.js"></script>
 <p><code>chai-http</code> allows us to construct a request to our application by passing in our app. This automatically opens our server for incoming requests. We can then use <code>.get()</code> to call our <code>/random</code> endpoint. The <code>end</code> method is then used to make the request and assert on the response.</p>
